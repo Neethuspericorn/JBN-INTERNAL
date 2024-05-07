@@ -92,7 +92,14 @@
         .post-content
         {
             flex-grow: 1;
-            width: calc(100% - 345px);
+            width: calc(100% - 354px);
+            padding-right: 42px;
+            font-size: 16px;
+            line-height: 26px;
+            img{
+                max-height: 519px;
+                margin: 30px 0;
+            }
         }
         .ad-placeholder {
             width: 354px;
