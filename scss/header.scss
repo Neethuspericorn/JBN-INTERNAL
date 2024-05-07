@@ -30,6 +30,10 @@
         @media ($sm-767){
             margin-top: 15px;
         }
+        @media(max-width:363px)
+        {
+            justify-content: center;
+        }
         li{
             line-height: 1;
             list-style: none;
@@ -260,6 +264,10 @@
             top:-5px;
             background-color: $light_trans;
             border-radius: 20px;
+            @media ($sm-991){
+                left: 40px;
+                background-color: rgba(229, 245, 250, 1)
+            }
             &.open{
                 width: 300px;
                 display: flex;
