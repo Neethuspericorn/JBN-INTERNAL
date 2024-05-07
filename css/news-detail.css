@@ -69,7 +69,7 @@
 }
 .main-blog-detail .image-detail img {
   width: 100%;
-  height: 600px;
+  max-height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
@@ -77,17 +77,17 @@
 }
 @media (max-width: 1679px) {
   .main-blog-detail .image-detail img {
-    height: 500px;
+    max-height: 500px;
   }
 }
 @media (max-width: 991px) {
   .main-blog-detail .image-detail img {
-    height: 400px;
+    max-height: 400px;
   }
 }
 @media (max-width: 579px) {
   .main-blog-detail .image-detail img {
-    height: 350px;
+    max-height: 350px;
   }
 }
 .main-blog-detail .posted-by-detail {
