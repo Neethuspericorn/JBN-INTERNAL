@@ -255,8 +255,9 @@
         .search-field{
             position: absolute;
             width: 0;
-            right: 42px;
+            right: 48px;
             display: none;
+            top:-5px;
             background-color: $light_trans;
             &.open{
                 width: 300px;

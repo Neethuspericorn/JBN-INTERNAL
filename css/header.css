@@ -278,8 +278,9 @@
 .header-navbar .search-area .search-field {
   position: absolute;
   width: 0;
-  right: 42px;
+  right: 48px;
   display: none;
+  top: -5px;
   background-color: rgba(229, 245, 250, 0.8);
 }
 .header-navbar .search-area .search-field.open {
