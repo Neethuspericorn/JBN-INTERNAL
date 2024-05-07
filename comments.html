@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/news-detail.css">
     <link rel="stylesheet" href="css/followus.css">
     <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/comments.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/detail-page.css">
 </head>
 <body>
     <header>
@@ -81,11 +80,8 @@
                         </li>  
                     </ul>
                     <form class="d-flex search-area" role="search">
-                        <div class="search-field">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn search-btn" type="submit"><img src="img/search-icon.svg" alt=""></button>
-                        </div>
-                        <button class="btn btn-search"><img src="img/search-icon.svg" alt=""></button>
+                      <input class="search expandright"  id="searchright" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-search searchbutton" type="submit"><img src="img/search-icon.svg" alt=""></button>
                     </form>
                     <ul class="navbar-nav flags mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -127,290 +123,73 @@
         </div>
     </header>
     <main class="page-wrap">
-        <section class="news-detail">
+         
+         
+         <section class="comments">
             <div class="container container-custom">
-                <h4 class="news-sub">News</h4>
-                <h3 class="main-head">LATEST NEWS</h3>
-            </div>
-            <hr/>
-            <div class="main-blog-detail">
-                <div class="container container-custom">
-                <span class="exclusive">Exclusive</span>
-                <h3 class="news-title">Feds Investigate Antisemitism at Princeton University</h3>
-                <div class="image-detail">
-                    <img src="img/prime-thumb-grid-img.png" alt="">
-                </div>
-                <div class="posted-by-detail">
-                    <div class="name-detl">
-                        <div class="image-person">
-                            <img src="img/popular1.png" alt="editor pick">
-                        </div>
-                        <div class="person-detail">
-                            <h3>R.P Saikrishnan</h3>
-                            <h4>Published : May 06, 2024 10.29 am</h4>
-                        </div>
+                <div class="comments-wrp">
+                    <div class="title-wrp">
+                        <h3 class="title">Comments <span class="count">(2)</span></h3>
                     </div>
-                    <div class="share-com d-flex">
-                        <div class="share-icon mr-3">
-                            <img src="img/share.svg">
-                            Share
-                        </div>
-                        <div class="share-icon comment-icon">
-                            <img src="img/comment.svg">
-                            Comment
-                        </div>
-                    </div>
-                </div>
-                <div class="post-detail-section">
-                    <div class="post-content">
-                       <b> New York City:</b> 
-                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                         unknown printer took a galley of type and scrambled it to make a type specimen book.
-                          It has survived not only five centuries, but also the leap into electronic typesetting,
-                           remaining essentially unchanged. It was popularised in the 1960s with the release 
-                           of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-                       </p>
-                            
-                            <p>
-                                <b>Why do we use it?</b>
-                                <br/>
-                                <b>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever sintc.</b>
-                            </p>
-                    </div>
-                    <div class="ad-placeholder">
-                            <a class="ad-bnr" href="#">
-                                <img src="img/rt-ad-1.png" alt="">
-                            </a>
-                            <a class="ad-bnr" href="#">
-                                <img src="img/rt-ad-2.png" alt="">
-                            </a>
-                            <a class="ad-bnr" href="#">
-                                <img src="img/rt-ad-3.png" alt="">
-                            </a>
-                        </div>
-                   
-                </div>
-        </div>        
-            </div>
-        </section>
-        <section class="featured-news">
-            <div class="container container-custom">
-                <div class="follow-us-new">MORE IN LATEST NEWS ...</div>
-                <div class="featured-outer-row">
-                    <div class="featured-left">
-                        <div class="tab-content" id="pills-tabContent">
-                          <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0">
-                              <div class="featured-news-only">
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-1.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-2.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-3.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-4.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-5.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-6.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                              </div>    
-                          </div>
-                          
-                          
-                          
-                          
-                          
-                          <div class="tab-pane fade" id="pills-7" role="tabpanel" aria-labelledby="pills-7-tab" tabindex="0">
-                              <div class="featured-news-only">
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-1.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-2.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-3.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-4.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-5.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                                  <div class="feature-col">
-                                      <div class="thumb-wrp">
-                                          <img src="img/featured-6.png" alt="">
-                                      </div>
-                                      <div class="date-stamp">
-                                          <span class="author">By JBN News</span> April 11, 2024
-                                      </div>
-                                      <div class="feature-title">
-                                          <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
-                      <div class="featured-rt">
-                          <div class="ad-placeholder">
-                            <a class="ad-bnr" href="#">
-                                <img src="img/rt-ad-1.png" alt="">
-                            </a>
-                            <a class="ad-bnr" href="#">
-                                <img src="img/rt-ad-2.png" alt="">
-                            </a>
-                            <a class="ad-bnr" href="#">
-                                <img src="img/rt-ad-3.png" alt="">
-                            </a>
-                          </div>
-                      </div> 
-                </div>
-            </div>
-        </section>
-        <section class="adspace  fetaured-news-detail">
-            <div class="container container-custom">
-                <div class="ad-bnr">
-                    <a href="#"><img src="img/horizontalad-bnr.png" alt=""></a>
-                </div>
-            </div>
-        </section>
-        <section class="follow-us-section follow-us-new">
-            <div class="container container-custom">
-               <div class="join-wsp">
-                    <div class="left-image">
-                       <div class="img-sec"> <img src="img/phone-wp.png"></div>
-                        <div class="text-pos-abs">
-                            <h4>Click here to join</h4>
-                            <h3> Our Whatsapp Group</h3>
-                        </div>
-                    </div> 
-                    <div class="follow-us-social">
-                        <h3>Follow us On</h3>
-                        <div class="d-flex social-icon-outr">
-                            <div class="social-link-icon">
-                                <img src="img/facebook.png">
-                                <h3>47,054</h3>
-                                <h4>Like</h4>
-                            </div>
-                            <div class="social-link-icon">
-                                <img src="img/instagram.png">
-                                <h3>47,054</h3>
-                                <h4>Followers</h4>
-                            </div>
-                            <div class="social-link-icon">
-                                <img src="img/twitter.png">
-                                <h3>47,054</h3>
-                                <h4>Followers</h4>
-                            </div>
-                        </div>                   
-                   </div> 
-               </div>
-               
-            </div>
-        </section>
+                    <div class="comment-inputs">
+                        <div class="inputs-wrp">
+                            <textarea name="comment" id="comment" class="form-control" placeholder="Write a Comments"></textarea>
 
-        
+                            <div class="submit-wrp">
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comments-post">
+                        <div class="sortby">
+                            Sort by Latest
+                        </div>
 
+                        <div class="comment-item">
+                            <div class="usr-img">
+                                <img src="img/popular1.png" alt="user">
+                            </div>
+                            <div class="cmt-txt">
+                                <div class="user-name">
+                                    <span class="name">R.P Saikrishnan</span>
+                                    <span class="time">33m</span>
+                                </div>
+                                <div class="comment">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classica
+                                </div>
+
+                                <div class="comment-actions">
+                                    <button class="btn btn-like">
+                                        <span class="img"><img src="img/like-btn.svg" alt="up"></span>
+                                        <span class="count">2</span>
+                                    </button>
+                                    <button class="btn btn-like">
+                                        <span class="img"><img src="img/dislike-btn.svg" alt="down"></span>
+                                        <span class="count"></span>
+                                    </button>
+
+                                    <button class="btn btn-share">Share</button>
+                                    <button class="btn btn-share">Reply</button>
+
+                                    <div class="flag-options">
+                                        <button class="btn btn-flag">
+                                            <img src="img/flag.svg" alt="flag">
+                                        </button>
+
+                                        <button class="btn btn-options">
+                                            <img src="img/three-dots-horiz.svg" alt="opts">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+         </section>
+         
          <!-- News letter -->
         <section class="newsletter-sec">
             <div class="container container-custom">
@@ -642,9 +421,6 @@
                 arrows: false,
                 buttons: false,
             });
-            $(".btn-search").click(function(){
-                $(".search-field").toggleClass("open");
-            })
         })
     </script>
 </body>
