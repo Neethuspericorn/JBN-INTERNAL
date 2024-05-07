@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/*** all Mobile Screen (iphone 6,7,8) ***/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); /*** all Mobile Screen (iphone 6,7,8) ***/
 /*** mobile Landscape Size ***/
 /*** medium devices (tablets, less than 992px) ***/
 /*** iPad in landscape ***/
@@ -85,8 +84,7 @@ body {
 .social li a img {
   width: 50%;
   height: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .page-wrap {
@@ -197,8 +195,7 @@ img {
   position: relative;
 }
 .news-grid .grid-box img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -505,8 +502,7 @@ img {
 }
 .featured-news .featured-outer-row .featured-rt .ad-placeholder .ad-bnr img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -559,8 +555,7 @@ img {
   border-radius: 8px;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .featured-news .featured-news-only .feature-col .date-stamp {
   font: normal normal normal 11px/15px "Poppins", sans-serif;
@@ -793,3 +788,5 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+/*# sourceMappingURL=custom.css.map */
