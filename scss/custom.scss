@@ -284,10 +284,21 @@ img{
         @media ($sm-1679){
             margin-bottom: 25px;
         }
+        .sec-title{
+            padding-bottom: 8px;
+        }
         .tab-navigation{
             margin-left: auto;
+            @media ($sm-991){
+                overflow-x: scroll;
+                flex-wrap: nowrap;
+                margin-left: 40px;
+            }
             .nav-item{
                 margin: 0 13px;
+                @media ($sm-1281){
+                    margin: 0 10px;
+                }
                 &:last-child{
                     margin-right: 0px;
                 }
@@ -299,6 +310,17 @@ img{
                 font: normal normal normal 16px/25px $font_txt;
                 padding: 0;
                 padding-bottom: 8px;
+                @media ($sm-1441){
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                @media ($sm-1281){
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+                @media ($sm-991){
+                    white-space: nowrap;
+                }
                 &.active{
                     color: $text;
                     font-weight: 600;
@@ -321,6 +343,9 @@ img{
         @media ($sm-1679){
             margin-bottom: 30px;
         }
+        @media ($sm-579){
+            flex-direction: column;
+        }
         .featured-left{
             max-width: calc(100% - 445px);
             @media ($sm-1679){
@@ -328,6 +353,10 @@ img{
             }
             @media ($sm-1441){
                 max-width: calc(100% - 300px);
+            }
+            @media ($sm-579){
+                max-width: 100%;
+                width: 100%;
             }
         }
         .featured-rt{
@@ -338,6 +367,10 @@ img{
             }
             @media ($sm-1441){
                 max-width: 300px;
+            }
+            @media ($sm-579){
+                max-width: 100%;
+                width: 100%;
             }
             .ad-placeholder{
                 margin-left: 91px;
@@ -350,6 +383,9 @@ img{
                 }
                 @media ($sm-1441){
                     margin-left: 40px;
+                }
+                @media ($sm-579){
+                    margin-left: 0px;
                 }
                 .ad-bnr{
                     margin-bottom: 30px;
@@ -378,14 +414,19 @@ img{
             flex-direction: column;
             flex: 0 0 auto;
             margin-right: 45px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             width: calc((100% / 2) - 23px);
             @media ($sm-1679){
                 margin-bottom: 20px;
+                margin-right: 35px;
+                width: calc((100% / 2) - 18px);
+            }
+            @media (max-width:800px){
+                width: 100%;
             }
             &:nth-child(1), &:nth-child(2){
                 border-top:2px solid $primary;
-                padding-top: 34px;
+                padding-top: 30px;
                 @media ($sm-1679){
                     padding-top: 24px;
                 }
@@ -395,7 +436,7 @@ img{
             }
             .thumb-wrp{
                 border-radius: 8px;
-                margin-bottom: 17px;
+                margin-bottom: 15px;
                 overflow: hidden;
                 img{
                     border-radius: 8px;
@@ -407,7 +448,7 @@ img{
             .date-stamp{
                 font: normal normal normal 11px/15px $font_txt;
                 color: $grayTxt;
-                margin-bottom: 12px;
+                margin-bottom: 9px;
                 @media ($sm-1679){
                     margin-bottom: 6px;
                 }
@@ -418,11 +459,11 @@ img{
             }
             .feature-title{
                 font: normal normal 600 18px/28px $font_txt;
-                @media ($sm-1679){
+                @media ($sm-1441){
                     font-size: 16px;
                     line-height: 24px;
                 }
-                @media ($sm-1441){
+                @media ($sm-1281){
                     font-size: 14px;
                     line-height: 22px;
                 }
