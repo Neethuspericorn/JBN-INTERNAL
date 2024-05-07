@@ -480,6 +480,10 @@ img{
     position: relative;
     margin-top: 50px;
     // z-index: 999;
+    @media ($sm-1679)
+    {
+        padding: 65px 0px 62px 0px;
+    }
     &::before{
         content: "";
         position: absolute;

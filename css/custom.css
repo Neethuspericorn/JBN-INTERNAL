@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/*** all Mobile Screen (iphone 6,7,8) ***/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); /*** all Mobile Screen (iphone 6,7,8) ***/
 /*** mobile Landscape Size ***/
 /*** medium devices (tablets, less than 992px) ***/
 /*** iPad in landscape ***/
@@ -593,6 +592,11 @@ img {
   background: transparent linear-gradient(206deg, #F5FAFF 0%, #DBEDFF 100%) 0% 0% no-repeat padding-box;
   position: relative;
   margin-top: 50px;
+}
+@media (max-width: 1679px) {
+  .video-listing {
+    padding: 65px 0px 62px 0px;
+  }
 }
 .video-listing::before {
   content: "";
