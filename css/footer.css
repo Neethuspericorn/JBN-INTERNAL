@@ -236,25 +236,15 @@
   position: relative;
 }
 .footer .footer-info .container .btn-go-to {
-  position: absolute;
-  top: -50px;
-  right: -50px;
+  position: fixed;
+  bottom: 50px;
+  top: unset;
+  right: 10px;
   transform: translateY(-50%);
-}
-@media (max-width: 1679px) {
-  .footer .footer-info .container .btn-go-to {
-    top: -40px;
-  }
 }
 @media (max-width: 1481px) {
   .footer .footer-info .container .btn-go-to {
-    top: -30px;
     right: 0;
-  }
-}
-@media (max-width: 1281px) {
-  .footer .footer-info .container .btn-go-to {
-    top: -20px;
   }
 }
 .footer .footer-info .contact-info {

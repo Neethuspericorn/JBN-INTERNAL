@@ -171,19 +171,20 @@
         .container {
             position: relative;
             .btn-go-to{
-                position: absolute;
-                top: -50px;
-                right: -50px;
+                position: fixed;
+                bottom:50px;
+                top: unset;
+                right: 10px;
                 transform: translateY(-50%);
                 @media ($sm-1679){
-                    top: -40px;                
+                    // top: -40px;                
                 }
                 @media ($sm-1481){
-                    top: -30px;   
+                    // top: -30px;   
                     right: 0;
                 }
                 @media ($sm-1281){
-                    top: -20px;
+                    // top: -20px;
                 }
             }
         }
