@@ -50,6 +50,11 @@
     margin-top: 15px;
   }
 }
+@media (max-width: 363px) {
+  .header-strip .stip-menu {
+    justify-content: center;
+  }
+}
 .header-strip .stip-menu li {
   line-height: 1;
   list-style: none;

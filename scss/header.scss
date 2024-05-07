@@ -30,6 +30,10 @@
         @media ($sm-767){
             margin-top: 15px;
         }
+        @media(max-width:363px)
+        {
+            justify-content: center;
+        }
         li{
             line-height: 1;
             list-style: none;
