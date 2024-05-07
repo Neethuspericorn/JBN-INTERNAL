@@ -79,8 +79,11 @@
                         </li>  
                     </ul>
                     <form class="d-flex search-area" role="search">
-                      <input class="search expandright"  id="searchright" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-search searchbutton" type="submit"><img src="img/search-icon.svg" alt=""></button>
+                        <div class="search-field">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn search-btn" type="submit"><img src="img/search-icon.svg" alt=""></button>
+                        </div>
+                        <button class="btn btn-search"><img src="img/search-icon.svg" alt=""></button>
                     </form>
                     <ul class="navbar-nav flags mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -1222,6 +1225,10 @@
                 arrows: false,
                 buttons: false,
             });
+            $(".btn-search").click(function(){
+                alert(1);
+                $(".search-field").toggleClass("open");
+            })
         })
     </script>
 </body>

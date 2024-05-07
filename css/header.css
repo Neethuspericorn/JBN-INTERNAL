@@ -255,10 +255,36 @@
     max-width: 18px;
   }
 }
+.header-navbar .search-area {
+  position: relative;
+}
 @media (max-width: 991px) {
   .header-navbar .search-area {
     display: inline-flex !important;
   }
+}
+.header-navbar .search-area .form-control {
+  width: 100%;
+  max-width: 300px;
+  color: #7B7B7B;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.header-navbar .search-area .form-control::-webkit-input-placeholder {
+  font-size: 14px;
+}
+.header-navbar .search-area .search-field {
+  position: absolute;
+  width: 0;
+  right: 42px;
+  display: none;
+  background-color: rgba(229, 245, 250, 0.8);
+}
+.header-navbar .search-area .search-field.open {
+  width: 300px;
+  display: flex;
 }
 .header-navbar .search-area .btn-search {
   background-color: rgba(229, 245, 250, 0.8);

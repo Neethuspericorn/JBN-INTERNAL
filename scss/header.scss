@@ -236,8 +236,32 @@
         }
     }
     .search-area{
+        position: relative;
         @media ($sm-991){
             display: inline-flex !important;
+        }
+        .form-control{
+            width: 100%;
+            max-width: 300px;
+            color: $tabNav;
+            box-shadow: none;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            &::-webkit-input-placeholder{
+                font-size: 14px;
+            }
+        }
+        .search-field{
+            position: absolute;
+            width: 0;
+            right: 42px;
+            display: none;
+            background-color: $light_trans;
+            &.open{
+                width: 300px;
+                display: flex;
+            }
         }
         .btn-search{
             background-color: $light_trans;
