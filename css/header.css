@@ -282,6 +282,7 @@
   display: none;
   top: -5px;
   background-color: rgba(229, 245, 250, 0.8);
+  border-radius: 20px;
 }
 .header-navbar .search-area .search-field.open {
   width: 300px;

@@ -259,6 +259,7 @@
             display: none;
             top:-5px;
             background-color: $light_trans;
+            border-radius: 20px;
             &.open{
                 width: 300px;
                 display: flex;
