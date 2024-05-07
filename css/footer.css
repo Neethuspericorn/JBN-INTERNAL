@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/*** all Mobile Screen (iphone 6,7,8) ***/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); /*** all Mobile Screen (iphone 6,7,8) ***/
 /*** mobile Landscape Size ***/
 /*** medium devices (tablets, less than 992px) ***/
 /*** iPad in landscape ***/
@@ -59,6 +58,7 @@
   .footer .popular-items .title {
     font-size: 14px;
     margin-bottom: 16px;
+    max-width: 100%;
   }
 }
 .footer .popular-items .title .txt {
@@ -77,6 +77,11 @@
   margin-bottom: 30px;
   color: #ffffff;
   text-decoration: none;
+}
+@media (max-width: 1281px) {
+  .footer .post-item {
+    max-width: 100% !important;
+  }
 }
 .footer .post-item .img-wrp {
   width: 86px;
@@ -104,8 +109,7 @@
 }
 .footer .post-item .img-wrp img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .footer .post-item .post-title {
   font-size: 14px;
@@ -274,8 +278,7 @@
 .footer .footer-info .contact-info .img img {
   width: 24px;
   height: 24px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 @media (max-width: 1679px) {
   .footer .footer-info .contact-info .img img {
@@ -379,8 +382,7 @@
 }
 .footer .brand-info .logo img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .footer .social {
   justify-content: flex-end;
@@ -426,8 +428,7 @@
 .footer .social li a img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .footer .copyrights {
   padding-top: 20px;
@@ -468,3 +469,5 @@
 .footer .copyrights .copy-info a:hover {
   text-decoration: underline;
 }
+
+/*# sourceMappingURL=footer.css.map */
