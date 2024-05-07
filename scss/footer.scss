@@ -49,6 +49,8 @@
         align-items: center;
         max-width: 400px;
         margin-bottom: 30px;
+        color: #ffffff;
+        text-decoration: none;
         .img-wrp{
             width: 86px;
             height: 86px;
@@ -107,6 +109,7 @@
         align-items: center;
         margin-bottom: 18px;
         max-width: 300px;
+        text-decoration: none;
         @media ($sm-1679){
             margin-bottom: 16px;
         }
