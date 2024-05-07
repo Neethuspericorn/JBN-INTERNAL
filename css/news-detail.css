@@ -193,6 +193,7 @@
   padding: 7px 19px 19px;
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
 }
 .main-blog-detail .post-detail-section .ad-placeholder .ad-bnr {
   margin-top: 30px;
