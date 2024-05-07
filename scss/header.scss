@@ -264,6 +264,10 @@
             top:-5px;
             background-color: $light_trans;
             border-radius: 20px;
+            @media ($sm-991){
+                left: 40px;
+                background-color: rgba(229, 245, 250, 1)
+            }
             &.open{
                 width: 300px;
                 display: flex;
