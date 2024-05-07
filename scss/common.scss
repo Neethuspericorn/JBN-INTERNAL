@@ -4,6 +4,14 @@
     line-height: 34px;
     font-weight: 600;
     color: $text;
+    @media ($sm-1679){
+        font-size: 24px;
+        line-height: 32px;
+    }
+    @media ($sm-1481){
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 .links{
     text-decoration: none;

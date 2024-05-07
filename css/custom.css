@@ -358,11 +358,26 @@ img {
     margin-bottom: 25px;
   }
 }
+.featured-news .featured-title-wrap .sec-title {
+  padding-bottom: 8px;
+}
 .featured-news .featured-title-wrap .tab-navigation {
   margin-left: auto;
 }
+@media (max-width: 991px) {
+  .featured-news .featured-title-wrap .tab-navigation {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    margin-left: 40px;
+  }
+}
 .featured-news .featured-title-wrap .tab-navigation .nav-item {
   margin: 0 13px;
+}
+@media (max-width: 1281px) {
+  .featured-news .featured-title-wrap .tab-navigation .nav-item {
+    margin: 0 10px;
+  }
 }
 .featured-news .featured-title-wrap .tab-navigation .nav-item:last-child {
   margin-right: 0px;
@@ -374,6 +389,23 @@ img {
   font: normal normal normal 16px/25px "Poppins", sans-serif;
   padding: 0;
   padding-bottom: 8px;
+}
+@media (max-width: 1441px) {
+  .featured-news .featured-title-wrap .tab-navigation .nav-link {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1281px) {
+  .featured-news .featured-title-wrap .tab-navigation .nav-link {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .featured-news .featured-title-wrap .tab-navigation .nav-link {
+    white-space: nowrap;
+  }
 }
 .featured-news .featured-title-wrap .tab-navigation .nav-link.active {
   color: #000000;
@@ -397,6 +429,11 @@ img {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 579px) {
+  .featured-news .featured-outer-row {
+    flex-direction: column;
+  }
+}
 .featured-news .featured-outer-row .featured-left {
   max-width: calc(100% - 445px);
 }
@@ -408,6 +445,12 @@ img {
 @media (max-width: 1441px) {
   .featured-news .featured-outer-row .featured-left {
     max-width: calc(100% - 300px);
+  }
+}
+@media (max-width: 579px) {
+  .featured-news .featured-outer-row .featured-left {
+    max-width: 100%;
+    width: 100%;
   }
 }
 .featured-news .featured-outer-row .featured-rt {
@@ -422,6 +465,12 @@ img {
 @media (max-width: 1441px) {
   .featured-news .featured-outer-row .featured-rt {
     max-width: 300px;
+  }
+}
+@media (max-width: 579px) {
+  .featured-news .featured-outer-row .featured-rt {
+    max-width: 100%;
+    width: 100%;
   }
 }
 .featured-news .featured-outer-row .featured-rt .ad-placeholder {
@@ -439,6 +488,11 @@ img {
 @media (max-width: 1441px) {
   .featured-news .featured-outer-row .featured-rt .ad-placeholder {
     margin-left: 40px;
+  }
+}
+@media (max-width: 579px) {
+  .featured-news .featured-outer-row .featured-rt .ad-placeholder {
+    margin-left: 0px;
   }
 }
 .featured-news .featured-outer-row .featured-rt .ad-placeholder .ad-bnr {
@@ -469,17 +523,24 @@ img {
   flex-direction: column;
   flex: 0 0 auto;
   margin-right: 45px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   width: calc(50% - 23px);
 }
 @media (max-width: 1679px) {
   .featured-news .featured-news-only .feature-col {
     margin-bottom: 20px;
+    margin-right: 35px;
+    width: calc(50% - 18px);
+  }
+}
+@media (max-width: 800px) {
+  .featured-news .featured-news-only .feature-col {
+    width: 100%;
   }
 }
 .featured-news .featured-news-only .feature-col:nth-child(1), .featured-news .featured-news-only .feature-col:nth-child(2) {
   border-top: 2px solid #2991FC;
-  padding-top: 34px;
+  padding-top: 30px;
 }
 @media (max-width: 1679px) {
   .featured-news .featured-news-only .feature-col:nth-child(1), .featured-news .featured-news-only .feature-col:nth-child(2) {
@@ -491,7 +552,7 @@ img {
 }
 .featured-news .featured-news-only .feature-col .thumb-wrp {
   border-radius: 8px;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
   overflow: hidden;
 }
 .featured-news .featured-news-only .feature-col .thumb-wrp img {
@@ -504,7 +565,7 @@ img {
 .featured-news .featured-news-only .feature-col .date-stamp {
   font: normal normal normal 11px/15px "Poppins", sans-serif;
   color: #787878;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
 }
 @media (max-width: 1679px) {
   .featured-news .featured-news-only .feature-col .date-stamp {
@@ -518,13 +579,13 @@ img {
 .featured-news .featured-news-only .feature-col .feature-title {
   font: normal normal 600 18px/28px "Poppins", sans-serif;
 }
-@media (max-width: 1679px) {
+@media (max-width: 1441px) {
   .featured-news .featured-news-only .feature-col .feature-title {
     font-size: 16px;
     line-height: 24px;
   }
 }
-@media (max-width: 1441px) {
+@media (max-width: 1281px) {
   .featured-news .featured-news-only .feature-col .feature-title {
     font-size: 14px;
     line-height: 22px;
