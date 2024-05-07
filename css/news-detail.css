@@ -151,25 +151,40 @@
 }
 .main-blog-detail .post-detail-section .post-content {
   flex-grow: 1;
-  width: calc(100% - 345px);
+  width: calc(100% - 354px);
+  padding-right: 42px;
   font-size: 16px;
-  line-height: 34px;
+  line-height: 32px;
 }
 @media (max-width: 1679px) {
   .main-blog-detail .post-detail-section .post-content {
     font-size: 14px;
     line-height: 22px;
+    padding-right: 25px;
   }
 }
 @media (max-width: 1281px) {
   .main-blog-detail .post-detail-section .post-content {
     font-size: 12px;
     line-height: 20px;
+    padding-right: 0px;
+    width: 100%;
   }
 }
 .main-blog-detail .post-detail-section .post-content img {
   max-height: 519px;
   margin: 30px 0;
+}
+.main-blog-detail .post-detail-section .post-content p {
+  font-size: 16px;
+  line-height: 32px;
+  padding-right: 38px;
+  line-height: 34px;
+}
+@media (max-width: 1679px) {
+  .main-blog-detail .post-detail-section .post-content p {
+    font-size: 15px;
+  }
 }
 .main-blog-detail .post-detail-section .ad-placeholder {
   width: 354px;
