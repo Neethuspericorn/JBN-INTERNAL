@@ -95,7 +95,15 @@
             width: calc(100% - 354px);
             padding-right: 42px;
             font-size: 16px;
-            line-height: 26px;
+            line-height: 34px;
+            @media ($sm-1679){
+                font-size: 14px;
+                line-height: 22px;
+            }
+            @media ($sm-1281){
+                font-size: 12px;
+                line-height: 20px;
+            }
             img{
                 max-height: 519px;
                 margin: 30px 0;
@@ -105,7 +113,12 @@
             width: 354px;
             text-align: center;
             background: #F5F5F5;
-            padding: 19px;
+            padding:7px 19px 19px;
+            display: flex;
+            flex-direction: column;
+            .ad-bnr{
+                margin-top: 30px;
+            }
         }
     }
 
