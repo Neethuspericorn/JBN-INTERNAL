@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
         integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/detail-page-new.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/followus.css">
     <link rel="stylesheet" href="css/newsletter.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/detail-page-new.css">
 </head>
 
 <body>
-    <header class="top">
+    <header>
         <div class="header-strip">
             <div class="container container-custom">
                 <div class="row h-strip-row">
@@ -91,7 +93,7 @@
                                 <button class="btn search-btn" type="submit"><img src="img/search-icon.svg"
                                         alt=""></button>
                             </div>
-                            <a class="btn btn-search"><img src="img/search-icon.svg" alt=""></a>
+                            <button class="btn btn-search"><img src="img/search-icon.svg" alt=""></button>
                         </form>
                         <ul class="navbar-nav flags mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -132,34 +134,195 @@
             </div>
         </div>
     </header>
-    <main class="page-wrap">
+    <main class="page-wrap page-align">
+
+        <!-- Banner slider starts -->
         <section class="banner-slider">
             <div class="banner-inner">
                 <div class="box1">
                     <div class="bg-img"><img src="img/bg-img1.jpg" alt="bg-img"></div>
                     <div class="container container-custom">
-                         <div class="text-sec">
-                        <div class="title">#1 Passover Programs & Pesach Vacations Platform</div>
-                        <div class="subtitle">“It’s so easy finding a Pesach Rental or Passover Program!” - Pesach Traveler</div>
+                        <div class="text-sec">
+                            <div class="title">#1 Passover Programs & Pesach Vacations Platform</div>
+                            <div class="subtitle">“It’s so easy finding a Pesach Rental or Passover Program!” - Pesach
+                                Traveler</div>
+                        </div>
                     </div>
-                    </div>
-                   
+
                 </div>
                 <div class="box1">
                     <div class="bg-img"><img src="img/bg-img2.jpg" alt="bg-img"></div>
                     <div class="text-sec">
-                         <div class="container container-custom">
-                         <div class="text-sec">
-                        <div class="title">#1 Passover Programs & Pesach Vacations Platform</div>
-                        <div class="subtitle">“It’s so easy finding a Pesach Rental or Passover Program!” - Pesach Traveler</div>
-                    </div>
-                    </div>
+                        <div class="container container-custom">
+                            <div class="text-sec">
+                                <div class="title">#2 Passover Programs & Pesach Vacations Platform</div>
+                                <div class="subtitle">“It’s so easy finding a Pesach Rental or Passover Program!” -
+                                    Pesach Traveler</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-   
-   
+        <!-- Banner slider ends -->
+
+
+        <!-- Img gallery starts -->
+        <section class="image-gallery-wrap">
+            <div class="container container-custom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="featured-img">
+                            <img src="img/detail-img-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row row-align img-list-wrap">
+                            <div class="col-6">
+                                <div class="img-wrap">
+                                    <img src="img/detail-img-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="img-wrap">
+                                    <img src="img/detail-img-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="img-wrap">
+                                    <img src="img/detail-img-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="img-wrap more-txt-wrap">
+                                    <span>+3</span>
+                                    <img src="img/detail-img-5.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="gallery-popup-wrap" style="opacity: 0; pointer-events: none; visibility: hidden;">
+            <div class="galler-content-wrap">
+                <div class="close-wrap">
+                    <img src="img/close.svg" alt="">
+                </div>
+                <div class="slider-for">
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img-wrap">
+                            <img src="img/detail-img-5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Img gallery ends -->
+
+        <!-- content starts -->
+        <section class="detail-content-wrap">
+            <div class="container container-custom">
+                <div class="head-wrap">
+                    <h2 class="page-title">Kosherica #1 Passover</h2>
+                    <div class="location">Bahamas | Florida | Arizona</div>
+                </div>
+                <div class="content-wrap">
+                    <p class="para">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                        egestas. Ut
+                        arcu libero, pulvinar non massa sed, accumsan scelerisque dui. Morbi purus mauris, vulputate
+                        quis felis nec, fermentum aliquam orci. Quisque ornare iaculis placerat. Class aptent taciti
+                        sociosqu ad litora torquent. Pellentesque habitant morbi tristique senectus et netus et
+                        malesuada fames ac turpis egestas.</p>
+
+                    <p class="para">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                        egestas. Ut
+                        arcu libero, pulvinar non massa sed, accumsan scelerisque dui. Morbi purus mauris, vulputate
+                        quis felis nec, fermentum aliquam orci. Quisque ornare iaculis placerat. Class aptent taciti
+                        sociosqu ad litora torquent. Pellentesque habitant morbi tristique senectus et netus et
+                        malesuada fames ac turpis egestas.</p>
+                </div>
+            </div>
+        </section>
+        <!-- content ends -->
+
+
+        <!-- reach session -->
+        <section class="reach-sec">
+            <div class="container container-custom">
+                <div class="reach-bnr">
+                    <div class="title">Reach out to us for more information about us</div>
+                    <div class="sub-title">We’re Here to Answer Your Questions and Guide You Further</div>
+                    <a href="#" class="btn-link">Contact Us</a>
+                </div>
+            </div>
+        </section>
+        <!-- reach session -->
+
         <!-- News letter -->
         <section class="newsletter-sec">
             <div class="container container-custom">
@@ -400,9 +563,9 @@
             });
             $(".btn-search").click(function () {
                 $(".search-field").toggleClass("open");
-            })
+            });
 
-              $('.banner-inner').slick({
+            $('.banner-inner').slick({
                 dots: true,
                 infinite: true,
                 speed: 600,
@@ -415,17 +578,60 @@
                 arrows: false
             });
         })
+    </script>
+    <script>
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '.slider-nav',
+            prevArrow: `<button type='button' class='slick-prev pull-left'>
+    <svg xmlns='http://www.w3.org/2000/svg' width='19.503' height='19.503' viewBox='0 0 19.503 19.503'>
+      <path id='left' d='M12.752,3A9.752,9.752,0,1,0,22.5,12.752,9.763,9.763,0,0,0,12.752,3Zm4.511,10.227-2.354,2.354a.672.672,0,0,1-.951-.951l1.206-1.206H8.717a.673.673,0,1,1,0-1.345h6.447l-1.206-1.206a.672.672,0,1,1,.951-.951l2.354,2.354a.672.672,0,0,1,0,.951Z' transform='translate(-3 -3)' fill='#0e91ff'/>
+    </svg>
+  </button>`,
+            nextArrow: `<button type='button' class='slick-next pull-right'>
+    <svg xmlns='http://www.w3.org/2000/svg' width='19.503' height='19.503' viewBox='0 0 19.503 19.503'>
+      <path id='right' d='M12.752,3A9.752,9.752,0,1,0,22.5,12.752,9.763,9.763,0,0,0,12.752,3Zm4.511,10.227-2.354,2.354a.672.672,0,0,1-.951-.951l1.206-1.206H8.717a.673.673,0,1,1,0-1.345h6.447l-1.206-1.206a.672.672,0,1,1,.951-.951l2.354,2.354a.672.672,0,0,1,0,.951Z' transform='translate(-3 -3)' fill='#0e91ff'/>
+    </svg>
+  </button>`
 
-        // scrolltop js
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('.btn-go-to:hidden').stop(true, true).fadeIn();
-            } else {
-                $('.btn-go-to').stop(true, true).fadeOut();
-            }
         });
-        $(function () { $(".btn-go-to").click(function () { $("html,body").animate({ scrollTop: $(".top").offset().top }, "3000"); return false }) })
-        // scrolltop js
+        $('.slider-nav').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            arrows: false,
+            centerMode: true,
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 4,
+                    },
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                    breakpoint: 479,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]
+        });
+
+        $(document).ready(function () {
+            $(".more-txt-wrap").click(function () {
+                $('body').addClass("bodypopup");
+            });
+            $(".close-wrap").click(function () {
+                $('body').removeClass("bodypopup");
+            });
+        });
     </script>
 </body>
 
