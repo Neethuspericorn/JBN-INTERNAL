@@ -387,6 +387,13 @@
   font-size: 18px;
   line-height: 1;
   margin-top: 30px;
+  transition: background-color 0.2s linear;
+  border: 1px solid #fff;
+}
+.reach-sec .reach-bnr .btn-link:hover {
+  background-color: #1768BC;
+  color: #fff;
+  border-color: #ccc;
 }
 @media (max-width: 1679px) {
   .reach-sec .reach-bnr .btn-link {
