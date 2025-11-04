@@ -217,6 +217,7 @@
             color: #FFFFFF;
             opacity: 1;
             margin-bottom: 16px;
+            font-family: $font_txt;
             @media($sm-1679){
                 font-size: 30px;
                 line-height: 40px;
@@ -249,6 +250,7 @@
             color: #fff;
             font-size: 23px;
             line-height: 42px;
+            font-family: $font_txt;
             @media ($sm-1679){
                 font-size: 20px;
                 line-height: 42px;
@@ -290,6 +292,7 @@
             margin-top: 30px;
             transition: background-color 0.2s linear;
             border: 1px solid #fff;
+            font-family: $font_txt;
             &:hover{
                 background-color: #1768BC;
                 color: #fff;
@@ -378,6 +381,7 @@
             color: #000000;
             opacity: 1;
             margin-bottom: 16px;
+            font-family: $font_txt;
             @media($sm-1679){
                 font-size: 30px;
                 line-height: 40px;
@@ -410,6 +414,7 @@
             color: #000000;
             font-size: 26px;
             line-height: 36px;
+            font-family: $font_txt;
             @media ($sm-1679){
                 font-size: 24px;
                 line-height: 34px;
@@ -438,6 +443,9 @@
     }
     .radius{
         border-radius: 23px;
+        @media ($sm-767){
+            border-radius: 10px;
+        }
     }
     .icon {
       width: 50px;
@@ -504,6 +512,7 @@
         border-collapse: collapse;
         background-color: transparent;
         max-width: 1400px;
+        font-family: $font_txt;
         th{
             border: 0;
         }
@@ -591,10 +600,14 @@
         @media ($sm-1199){
             font-size: 14px;
             line-height: 24px;
+            padding-top: 15px;
+        padding-bottom: 15px;
         }
         @media ($sm-991){
             font-size: 13px;
             line-height: 20px;
+            padding-top: 10px;
+        padding-bottom: 10px;
         }
         &:first-child{
             padding-left: 45px;
@@ -699,6 +712,156 @@
     @media ($sm-579){
         padding-bottom: 20px;
     }
+    .sec-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 45px;
+        @media ($sm-1679){
+            padding-bottom: 40px;
+        }
+        @media ($sm-1481){
+            padding-bottom: 35px;
+        }
+        @media ($sm-1199){
+            padding-bottom: 30px;
+        }
+        @media ($sm-991){
+            padding-bottom: 25px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @media ($sm-767){
+            padding-bottom: 20px;
+            align-items: center;
+        }
+        .left-sec{
+            flex: 1;
+            @media ($sm-991){
+                margin-bottom: 15px;
+            }
+        }
+        .rt-sec{
+            max-width: 337px;
+            width: 100%;
+            @media ($sm-767){
+                max-width: 430px;
+            }
+            @media ($sm-479){
+                max-width: 100%;
+            }
+            .search-box{
+                background-color: #E6F3FF;
+                border-radius: 21px;
+                position: relative;
+                height: 42px;
+                @media ($sm-1679){
+                    height: 40px;
+                }
+                @media ($sm-1481){
+                    height: 38px;
+                }
+                &::before{
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    background: url(../img/loc-search.svg) no-repeat center;
+                    background-size: contain;
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    left: 15px;
+                    transform: translateY(-50%);
+                    @media ($sm-1199){
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+                .form-control{
+                    background-color: transparent;
+                    border: 0;
+                    border-radius: 21px;
+                    padding: 9px 15px;
+                    box-shadow: none;
+                    outline: none;
+                    padding-left: 40px;
+                    font-weight: 500;
+                    font-family: $font_txt;
+                    
+                    &::placeholder{
+                        color: #84A1BC;
+                    }
+                }
+            }
+        }
+        .title{
+            font-family: $font_txt;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            margin-bottom: 16px;
+            @media($sm-1679){
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @media($sm-1481){
+                font-size: 28px;
+                line-height: 38px;
+            }
+            @media($sm-1199){
+                font-size: 26px;
+                line-height: 36px;
+                margin-bottom: 10px;
+            }
+            @media($sm-991){
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 5px;
+            }
+            @media($sm-767){
+                font-size: 22px;
+                line-height: 28px;
+            }
+             @media ($sm-579){
+                text-align: center;
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+        .sub-title{
+            color: #000000;
+            font-size: 26px;
+            line-height: 36px;
+            font-family: $font_txt;
+            @media ($sm-1679){
+                font-size: 24px;
+                line-height: 34px;
+            }
+            @media ($sm-1481){
+                font-size: 22px;
+                line-height: 32px;
+            }
+            @media ($sm-1199){
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @media ($sm-991){
+                font-size: 16px;
+                line-height: 24px;
+            }
+            @media ($sm-767){
+                font-size: 14px;
+                line-height: 20px;
+            }
+            @media ($sm-579){
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+    }
     .list-items{
         display: flex;
         flex-wrap: wrap;
@@ -763,6 +926,24 @@
                 line-height: 26px;
                 letter-spacing: 0px;
                 color: #15355A;
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                &::before{
+                    content: "";
+                    width: 17px;
+                    height: 17px;
+                    background: url(../img/location-marker.svg) no-repeat center;
+                    background-size: contain;
+                    display: inline-block;
+                    margin-right: 15px;
+                    @media ($sm-767){
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 10px;
+                    }
+                }
                 @media ($sm-767){
                     font-size: 13px;
                     line-height: 20px;
