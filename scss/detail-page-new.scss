@@ -1,0 +1,55 @@
+@import 'partials';
+.banner-slider{
+    .box1{
+        position: relative;
+         height: 406px;
+            display: flex;
+        justify-content: center;
+         flex-direction: column;
+      
+        .bg-img{
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+           
+            img{
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+
+            }
+
+        }
+        .text-sec{
+            position: relative;
+            z-index: 999;
+               display: flex;
+        justify-content: center;
+         flex-direction: column;
+         height: 100%;
+            .title{
+                font-weight: 600;
+                font-size: 34px;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+                @media($sm-1679){
+                    font-size: 32px;
+                }
+                @media($sm-1481){
+                    font-size: 28px;
+                }
+                @media($sm-1199){
+                    font-size: 26px;
+                }
+                @media($sm-991){
+                    font-size: 24px;
+                }
+                @media($sm-767){
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

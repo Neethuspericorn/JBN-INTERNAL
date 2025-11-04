@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.banner-slider .box1 {
+  position: relative;
+  height: 406px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner-slider .box1 .bg-img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+.banner-slider .box1 .bg-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.banner-slider .box1 .text-sec {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.banner-slider .box1 .text-sec .title {
+  font-weight: 600;
+  font-size: 34px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+@media (max-width: 1679px) {
+  .banner-slider .box1 .text-sec .title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1481px) {
+  .banner-slider .box1 .text-sec .title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-slider .box1 .text-sec .title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-slider .box1 .text-sec .title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-slider .box1 .text-sec .title {
+    font-size: 22px;
+  }
+}
+
+/*# sourceMappingURL=detail-page-new.css.map */
