@@ -184,17 +184,21 @@
         @media ($sm-1481){
             padding: 0 70px;
             border-radius: 30px;
+            height: 280px;
         }
         @media ($sm-1199){
             padding: 0 60px;
             border-radius: 25px;
+            height: 240px;
         }
         @media ($sm-991){
             padding: 0 40px;
             border-radius: 20px;
+            height: 220px;
         }
         @media ($sm-767){
             padding: 0 30px;
+            height: 200px;
         }
         @media ($sm-579){
             padding: 20px;

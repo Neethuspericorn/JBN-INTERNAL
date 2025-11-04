@@ -253,23 +253,27 @@
   .reach-sec .reach-bnr {
     padding: 0 70px;
     border-radius: 30px;
+    height: 280px;
   }
 }
 @media (max-width: 1199px) {
   .reach-sec .reach-bnr {
     padding: 0 60px;
     border-radius: 25px;
+    height: 240px;
   }
 }
 @media (max-width: 991px) {
   .reach-sec .reach-bnr {
     padding: 0 40px;
     border-radius: 20px;
+    height: 220px;
   }
 }
 @media (max-width: 767px) {
   .reach-sec .reach-bnr {
     padding: 0 30px;
+    height: 200px;
   }
 }
 @media (max-width: 579px) {
