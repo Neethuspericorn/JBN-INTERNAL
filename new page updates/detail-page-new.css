@@ -1138,22 +1138,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   overflow-y: auto;
-  padding-right: 5px;
-}
-@media (max-width: 1481px) {
-  .guide-listing-sec .list-items {
-    max-height: 80vh;
-  }
-}
-@media (max-width: 1199px) {
-  .guide-listing-sec .list-items {
-    max-height: 65vh;
-  }
-}
-@media (max-width: 767px) {
-  .guide-listing-sec .list-items {
-    max-height: 320px;
-  }
 }
 .guide-listing-sec .list-items .img-thumbnail1 {
   position: relative;
@@ -1161,8 +1145,6 @@
 .guide-listing-sec .list-items .loc-listing {
   width: calc(33.3333333333% - 20px);
   padding-bottom: 60px;
-  text-decoration: none;
-  cursor: pointer;
 }
 @media (max-width: 1679px) {
   .guide-listing-sec .list-items .loc-listing {
@@ -1313,10 +1295,6 @@
   font-family: "Poppins", sans-serif;
   font-size: 17px;
 }
-.guide-listing-sec .pagination .page-item .page-link:hover {
-  background-color: #1768BC;
-  color: #fff;
-}
 @media (max-width: 1679px) {
   .guide-listing-sec .pagination .page-item .page-link {
     font-size: 16px;
@@ -1349,10 +1327,6 @@
   color: #5B6B7A;
   border: 0;
 }
-.guide-listing-sec .pagination .page-item.control .page-link:hover {
-  background-color: #1768BC;
-  color: #fff;
-}
 .guide-listing-sec .pagination .page-item.active .page-link {
   background-color: #1768BC;
   border-color: #1768BC;
@@ -1362,10 +1336,6 @@
   color: #5B6B7A;
   background-color: #F1F8FE;
   border: 0;
-}
-.guide-listing-sec .pagination .page-item:not(.control) .page-link:hover {
-  background-color: #1768BC;
-  color: #fff;
 }
 @media (max-width: 767px) {
   .guide-listing-sec .pagination-container {
