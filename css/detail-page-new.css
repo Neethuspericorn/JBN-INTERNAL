@@ -555,6 +555,7 @@
   font-size: 26px;
   line-height: 36px;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 @media (max-width: 1679px) {
   .price-chart-sec .sec-top .sub-title {
@@ -1095,6 +1096,7 @@
   color: #000000;
   font-size: 26px;
   line-height: 36px;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
 @media (max-width: 1679px) {
@@ -1140,23 +1142,38 @@
   overflow-y: auto;
   padding-right: 5px;
 }
-@media (max-width: 1481px) {
-  .guide-listing-sec .list-items {
-    max-height: 80vh;
+.guide-listing-sec .list-items .img-thumbnail1 {
+  position: relative;
+  height: 266px;
+}
+@media (max-width: 1679px) {
+  .guide-listing-sec .list-items .img-thumbnail1 {
+    height: 258px;
+  }
+}
+@media (max-width: 1441px) {
+  .guide-listing-sec .list-items .img-thumbnail1 {
+    height: 228px;
   }
 }
 @media (max-width: 1199px) {
-  .guide-listing-sec .list-items {
-    max-height: 65vh;
+  .guide-listing-sec .list-items .img-thumbnail1 {
+    height: 198px;
   }
 }
-@media (max-width: 767px) {
-  .guide-listing-sec .list-items {
-    max-height: 320px;
+@media (max-width: 991px) {
+  .guide-listing-sec .list-items .img-thumbnail1 {
+    height: 180px;
   }
 }
-.guide-listing-sec .list-items .img-thumbnail1 {
-  position: relative;
+.guide-listing-sec .list-items .img-thumbnail1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+  -o-object-position: center;
+     object-position: center;
 }
 .guide-listing-sec .list-items .loc-listing {
   width: calc(33.3333333333% - 20px);
@@ -1317,6 +1334,10 @@
   background-color: #1768BC;
   color: #fff;
 }
+.guide-listing-sec .pagination .page-item .page-link.active {
+  background-color: #1768BC;
+  color: #fff;
+}
 @media (max-width: 1679px) {
   .guide-listing-sec .pagination .page-item .page-link {
     font-size: 16px;
@@ -1353,7 +1374,7 @@
   background-color: #1768BC;
   color: #fff;
 }
-.guide-listing-sec .pagination .page-item.active .page-link {
+.guide-listing-sec .pagination .page-item:not(.control).active .page-link {
   background-color: #1768BC;
   border-color: #1768BC;
   color: #fff;
@@ -1846,7 +1867,7 @@
   }
 }
 .gallery-popup-wrap .galler-content-wrap .slider-for .slick-arrow.slick-next {
-  inset: 0 -15px 0 auto;
+  inset: 29px -15px 0 auto;
 }
 @media (max-width: 1679px) {
   .gallery-popup-wrap .galler-content-wrap .slider-for .slick-arrow.slick-next {

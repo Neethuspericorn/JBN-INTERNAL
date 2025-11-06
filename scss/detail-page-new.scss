@@ -411,6 +411,7 @@
             font-size: 26px;
             line-height: 36px;
             font-family: $font_txt;
+            font-weight: 500;
             @media ($sm-1679){
                 font-size: 24px;
                 line-height: 34px;
@@ -829,6 +830,7 @@
             color: #000000;
             font-size: 26px;
             line-height: 36px;
+            font-weight: 500;
             font-family: $font_txt;
             @media ($sm-1679){
                 font-size: 24px;
@@ -862,17 +864,28 @@
         justify-content: space-between;
         overflow-y: auto;
         padding-right: 5px;
-        @media ($sm-1481){
-        max-height: 80vh;
-        }
-        @media ($sm-1199){
-        max-height: 65vh;
-        }
-        @media ($sm-767){
-            max-height: 320px;
-        }
         .img-thumbnail1{
             position: relative;
+            height: 266px;
+            @media ($sm-1679){
+                height: 258px;
+            }
+            @media ($sm-1441){
+                height: 228px;
+            }
+            @media ($sm-1199){
+                height: 198px;
+            }
+            @media ($sm-991){
+                height: 180px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+                object-position: center;
+            }
         }
       
         .loc-listing{
@@ -1007,6 +1020,10 @@
         background-color: #1768BC;
         color: #fff;
       }
+      &.active{
+        background-color: #1768BC;
+        color: #fff;
+      }
       @media ($sm-1679){
         font-size: 16px;
       }
@@ -1037,7 +1054,7 @@
       }
     }
 
-    .pagination .page-item.active .page-link {
+    .pagination .page-item:not(.control).active .page-link {
       background-color: #1768BC;
       border-color: #1768BC;
       color: #fff;
@@ -1407,7 +1424,7 @@
                     }
                 }
                 &.slick-next {
-                    inset: 0 -15px 0 auto;
+                    inset: 29px -15px 0 auto;
                     @media ($sm-1679) {
                         right: -10px;
                     }
