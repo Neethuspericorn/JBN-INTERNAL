@@ -5,6 +5,18 @@
         width: 100%;
         display: flex;
         margin-bottom: 52px;
+        @media ($sm-1679){
+            margin-bottom: 45px;
+        }
+        @media ($sm-1199){
+            margin-bottom: 40px;
+        }
+        @media ($sm-991){
+            margin-bottom: 30px;
+        }
+        @media ($sm-767){
+            margin-bottom: 20px;
+        }
         .back-btn{
             color: #2991FC;
             font-weight: 500;
@@ -106,7 +118,6 @@
                     margin-bottom: 25px;
                     font-size: 16px;
                     line-height: 26px;
-                    padding-top: 25px;
                 }
                 @media ($sm-1441){
                     font-size: 15px;
@@ -115,7 +126,6 @@
                 @media ($sm-1199){
                     font-size: 14px;
                     line-height: 24px;
-                    padding-top: 20px;
                     margin-bottom: 20px;
                 }
                 @media ($sm-767){
@@ -191,6 +201,7 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+                cursor: pointer;
                 @media ($sm-1679){
                     width: 90px;
                 }
@@ -236,6 +247,22 @@
     }
 }
 .blog-slider-sec{
+    padding-bottom: 180px;
+    @media ($sm-1679){
+        padding-bottom: 80px;
+    }
+    @media ($sm-1441){
+        padding-bottom: 60px;
+    }
+    @media ($sm-1199){
+        padding-bottom: 40px;
+    }
+    @media ($sm-991){
+        padding-bottom: 30px;
+    }
+    @media ($sm-579){
+        padding-bottom: 20px;
+    }
     .slider-title{
         display: flex;
         margin-bottom: 50px;
@@ -315,18 +342,33 @@
             box-shadow: 0px 3px 6px #0000000D;
             border-radius: 16px;
             padding: 18px;
+            margin: 10px 18px;
+            @media ($sm-1679){
+                margin: 10px 15px;
+            }
+            @media ($sm-1441){
+                margin: 10px 12px;
+            }
+            @media ($sm-1199){
+                margin: 10px;
+            }
+            @media ($sm-479){
+                margin: 0;
+            }
         }
         .thumb-wrp{
                 border-radius: 8px;
                 margin-bottom: 15px;
                 overflow: hidden;
                 position: relative;
+                max-height: 233px;
                 .play-btn{
                     width: 70px;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    cursor: pointer;
                     @media ($sm-1679){
                         width: 60px;
                     }
