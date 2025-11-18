@@ -1,0 +1,445 @@
+@import 'partials';
+.blog-detail-wrp{
+    padding-top: 30px;
+    .back-btn-wrp{
+        width: 100%;
+        display: flex;
+        margin-bottom: 52px;
+        .back-btn{
+            color: #2991FC;
+            font-weight: 500;
+            font-size: 18px;
+        line-height: 28px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        &::before{
+            content: "";
+            width: 7px;
+            height: 13px;
+            display: inline-block;
+            background: url(../img/bac-arrow-left.svg) no-repeat center;
+            background-size: contain;
+            transform: rotate(180deg);
+            margin-right: 10px;
+        }
+        @media ($sm-1441){
+            font-size: 16px;
+            line-height: 24px;
+        }
+        @media ($sm-1199){
+            font-size: 14px;
+            line-height: 22px;
+        }
+        @media ($sm-767){
+            font-size: 13px;
+            line-height: 20px;
+        }
+        }
+    }
+    .video-wrp{
+        box-shadow: 0px 3px 6px #0000000D;
+        border: 1px solid #EBEBEB;
+        border-radius: 16px;
+        padding: 50px 72px;
+        margin-bottom: 84px;
+         @media ($sm-1679){
+            padding: 50px 60px;
+            margin-bottom: 60px;
+         }
+         @media ($sm-1441){
+            padding: 45px 55px;
+            margin-bottom: 50px;
+         }
+         @media ($sm-1199){
+            padding: 40px;
+            margin-bottom: 40px;
+         }
+         @media ($sm-991){
+            padding: 30px;
+            margin-bottom: 30px;
+         }
+         @media ($sm-579){
+            padding: 20px;
+            margin-bottom: 20px;
+         }
+        .title-blk{
+            display: flex;
+            flex-direction: column;
+            .title{
+                color: #000000;
+                font-size: 38px;
+                line-height: 48px;
+                margin-bottom: 24px;
+                font-weight: 600;
+                @media ($sm-1679){
+                    font-size: 34px;
+                    line-height: 44px;
+                    margin-bottom: 20px;
+                }
+                @media ($sm-1441){
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+                @media ($sm-1199){
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 15px;
+                }
+                @media ($sm-991){
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                @media ($sm-767){
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+            .date-stamp{
+                font: normal normal normal 17px/27px $font_txt;
+                color: $grayTxt;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+                @media ($sm-1679){
+                    margin-bottom: 25px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    padding-top: 25px;
+                }
+                @media ($sm-1441){
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                @media ($sm-1199){
+                    font-size: 14px;
+                    line-height: 24px;
+                    padding-top: 20px;
+                    margin-bottom: 20px;
+                }
+                @media ($sm-767){
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+                .author{
+                    font-weight: 600;
+                    color: $primary;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 40px;
+                    @media ($sm-1679){
+                        margin-left: 30px;
+                     }
+                     @media ($sm-1199){
+                        margin-left: 20px;
+                     }
+                    &::before{
+                        content: "";
+                        width: 14px;
+                        height: 15px;
+                        background: url(../img/list-user-icon.svg) no-repeat center;
+                        background-size: contain;
+                        display: inline-block;
+                        flex-shrink: 0;
+                        margin-right: 15px;
+                        @media ($sm-767){
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .date{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    &::before{
+                        content: "";
+                        width: 13px;
+                        height: 16px;
+                        background: url(../img/list-calendar-icon.svg) no-repeat center;
+                        background-size: contain;
+                        display: inline-block;
+                        flex-shrink: 0;
+                        margin-right: 15px;
+                        @media ($sm-767){
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .player-wrp{
+            position: relative;
+            margin-bottom: 30px;
+            @media ($sm-1679){
+                margin-bottom: 25px;
+            }
+            @media ($sm-1199){
+                margin-bottom: 20px;
+            }
+            video{
+                width: 100%;
+                border-radius: 19px;
+            }
+            .play-btn{
+                width: 122px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                @media ($sm-1679){
+                    width: 90px;
+                }
+                @media ($sm-1441){
+                    width: 80px;
+                }
+                @media ($sm-1199){
+                    width: 70px;
+                }
+                @media ($sm-991){
+                    width: 60px;
+                }
+                @media ($sm-767){
+                    width: 50px;
+                }
+                @media ($sm-579){
+                    width: 30px;
+                }
+                img{
+                    max-width: 100%;
+                    display: block;
+                }
+            }
+        }
+        .btm-txt{
+            color: $grayTxt;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 500;
+            @media ($sm-1441){
+                font-size: 16px;
+                line-height: 24px;
+            }
+            @media ($sm-1199){
+                font-size: 14px;
+                line-height: 22px;
+            }
+            @media ($sm-767){
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+.blog-slider-sec{
+    .slider-title{
+        display: flex;
+        margin-bottom: 50px;
+        @media ($sm-1679){
+            margin-bottom: 40px;
+        }
+        @media ($sm-1441){
+            margin-bottom: 35px;
+        }
+        @media ($sm-1199){
+            margin-bottom: 30px;
+        }
+        @media ($sm-991){
+            margin-bottom: 20px;
+        }
+        .slide-custom-controls{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 130px;
+            margin-left: auto;
+            .slick-arrow{
+                width: 61px;
+                display: inline-block;
+                position: static;
+                height: auto;
+                transform: none;
+                @media ($sm-1679){
+                    width: 50px;
+                }
+                @media ($sm-1441){
+                    width: 40px;
+                }
+                @media ($sm-1199){
+                    width: 30px;
+                }
+                &::before{
+                    display: none;
+                    
+                }
+                &:last-child{
+                    margin-left: 15px;
+                }
+            }
+        }
+        .title{
+            font-size: 38px;
+            line-height: 30px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            @media ($sm-1679){
+                font-size: 34px;
+            line-height: 28px;
+            }
+            @media ($sm-1441){
+                font-size: 30px;
+            line-height: 28px;
+            }
+            @media ($sm-1199){
+                font-size: 26px;
+            line-height: 28px;
+            }
+            @media ($sm-991){
+                font-size: 22px;
+            line-height: 24px;
+            }
+            @media ($sm-767){
+                font-size: 20px;
+            line-height: 22px;
+            }
+        }
+    }
+    .blogSlider{
+        .blog-slide{
+            box-shadow: 0px 3px 6px #0000000D;
+            border-radius: 16px;
+            padding: 18px;
+        }
+        .thumb-wrp{
+                border-radius: 8px;
+                margin-bottom: 15px;
+                overflow: hidden;
+                position: relative;
+                .play-btn{
+                    width: 70px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    @media ($sm-1679){
+                        width: 60px;
+                    }
+                    @media ($sm-1441){
+                        width: 50px;
+                    }
+                    @media ($sm-1199){
+                        width: 40px;
+                    }
+                    @media ($sm-991){
+                        width: 30px;
+                    }
+                    img{
+                        max-width: 100%;
+                        display: block;
+                    }
+                }
+                img{
+                    border-radius: 8px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .content-wrp{
+                padding: 0;
+            }
+            .date-stamp{
+                font: normal normal normal 17px/27px $font_txt;
+                color: $grayTxt;
+                margin-bottom: 9px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                @media ($sm-1679){
+                    margin-bottom: 6px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    padding-top: 25px;
+                }
+                @media ($sm-1441){
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                @media ($sm-1199){
+                    font-size: 14px;
+                    line-height: 24px;
+                    padding-top: 20px;
+                }
+                @media ($sm-767){
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+                .author{
+                    font-weight: 600;
+                    color: $primary;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0;
+                    &::before{
+                        content: "";
+                        width: 14px;
+                        height: 15px;
+                        background: url(../img/list-user-icon.svg) no-repeat center;
+                        background-size: contain;
+                        display: inline-block;
+                        flex-shrink: 0;
+                        margin-right: 15px;
+                        @media ($sm-767){
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                &.btm{
+                    border-top: 1px solid #7070703d;
+                    padding-top: 20px;
+                    @media ($sm-1199){
+                        padding-top: 15px;
+                    }
+                }
+            }
+            .feature-title{
+                font: normal normal 600 18px/28px $font_txt;
+                @media ($sm-1441){
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                @media ($sm-1281){
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+            .feature-desc{
+               color: $grayTxt;
+               font: normal normal 400 18px/28px $font_txt;
+               padding: 25px 0;
+                @media ($sm-1441){
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding: 20px 0;
+                }
+                @media ($sm-1281){
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                @media ($sm-1199){
+                    padding: 15px 0;
+                }
+                @media ($sm-767){
+                    padding: 10px 0;
+                    font-size: 13px;
+                }
+            }
+    }
+}

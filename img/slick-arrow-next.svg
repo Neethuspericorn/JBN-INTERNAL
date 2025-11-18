@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61">
+  <g id="Group_60892" data-name="Group 60892" transform="translate(-992 -1671)">
+    <g id="Rectangle_13442" data-name="Rectangle 13442" transform="translate(992 1671)" fill="#fff" stroke="#d4e7f9" stroke-width="1">
+      <rect width="61" height="61" rx="30.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="60" height="60" rx="30" fill="none"/>
+    </g>
+    <g id="Group_60874" data-name="Group 60874" transform="translate(769 1690)">
+      <path id="Vector" d="M15.223,8.657a1.041,1.041,0,0,1-.738-.3L7.634,1.52.782,8.352A1.045,1.045,0,0,1-.693,6.873L6.9-.7a1.045,1.045,0,0,1,1.475,0l7.589,7.568a1.045,1.045,0,0,1-.738,1.784Z" transform="translate(257.431 3.791) rotate(90)" fill="#292d32"/>
+    </g>
+  </g>
+</svg>
