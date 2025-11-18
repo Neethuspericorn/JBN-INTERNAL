@@ -185,8 +185,8 @@
                 <div class="slider-title">
                     <div class="title">Other Blogs</div>
                     <div class="slide-custom-controls">
-                         <a class="slick-prev slick-arrow" href=""><img src="./img/slick-arrow-prev.svg" alt=""></a>
-                       <a class="slick-next slick-arrow" href=""><img src="./img/slick-arrow-next.svg" alt=""></a>
+                         <a class="slick-prev slick-arrow"><img src="./img/slick-arrow-prev.svg" alt=""></a>
+                       <a class="slick-next slick-arrow"><img src="./img/slick-arrow-next.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="blogSlider">
@@ -593,6 +593,13 @@
     // instead of a settings object
   ]
         });
+        $('.slick-prev').click(function () {
+  $('.blogSlider').slick('slickPrev');
+});
+
+$('.slick-next').click(function () {
+  $('.blogSlider').slick('slickNext');
+});
     </script>
 </body>
 
