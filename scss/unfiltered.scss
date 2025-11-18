@@ -7,6 +7,15 @@
     @media ($sm-1679){
         height: 380px;
     }
+    @media ($sm-1441){
+        height: 350px;
+    }
+    @media ($sm-1199){
+        height: 300px;
+    }
+    @media ($sm-767){
+        height: 260px;
+    }
     .container-custom{
         height: 100%;
     }
@@ -321,10 +330,13 @@
                 margin-bottom: 9px;
                 display: flex;
                 align-items: center;
+                border-top: 1px solid #7070703d;
+                padding-top: 33px;
                 @media ($sm-1679){
                     margin-bottom: 6px;
                     font-size: 16px;
                     line-height: 26px;
+                    padding-top: 25px;
                 }
                 @media ($sm-1441){
                     font-size: 15px;
@@ -333,6 +345,7 @@
                 @media ($sm-1199){
                     font-size: 14px;
                     line-height: 24px;
+                    padding-top: 20px;
                 }
                 @media ($sm-767){
                     font-size: 13px;
