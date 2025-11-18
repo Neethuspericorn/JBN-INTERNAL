@@ -168,12 +168,15 @@
                             </div>
                         </div>
                         <div class="player-wrp">
-                            <a class="play-btn" data-bs-target=""><img src="./img/play-btn.svg" alt=""></a>
-                            <video controls autoplay muted loop playsinline poster="./img/blog-video-screenshot.png">
-                                <source src="video.mp4" type="video/mp4">
-                                <source src="video.webm" type="video/webm">
-                            </video>
-                        </div>
+    <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+       data-video="https://www.youtube.com/embed/ScMzIvxBSi4">
+       <img src="./img/play-btn.svg" alt="">
+    </a>
+
+    <video muted loop playsinline poster="./img/blog-video-screenshot.png">
+        <source src="./img/sample.mp4" type="video/mp4">
+    </video>
+</div>
                         <div class="btm-txt">
                             Passover isn’t just a remembrance of liberation — it’s a reminder that freedom is both a legacy and a responsibility. Each year, families gather to retell a story that transcends generations, keeping the essence of faith, resilience, and unity alive.
                         </div>
@@ -507,6 +510,20 @@
             </div>
 
         </footer>
+        <!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
     </main>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -599,6 +616,19 @@
 
 $('.slick-next').click(function () {
   $('.blogSlider').slick('slickNext');
+});
+
+var videoModal = document.getElementById('videoModal');
+var videoFrame = document.getElementById('videoFrame');
+
+videoModal.addEventListener('show.bs.modal', function (event) {
+  let button = event.relatedTarget;
+  let videoUrl = button.getAttribute('data-video');
+  videoFrame.src = videoUrl + "?autoplay=1";
+});
+
+videoModal.addEventListener('hidden.bs.modal', function () {
+  videoFrame.src = "";
 });
     </script>
 </body>
