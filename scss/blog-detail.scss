@@ -194,6 +194,8 @@
             }
             .play-btn{
                 width: 122px;
+                height: 122px;
+                border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -205,27 +207,48 @@
                 padding: 0;
                 border: 0;
                 cursor: pointer;
+                background-color: #ffffff4d;
+                backdrop-filter: blur(30px);
+                -webkit-backdrop-filter: blur(30px);
+                flex-shrink: 0;
                 @media ($sm-1679){
                     width: 90px;
+                    height: 90px;
                 }
                 @media ($sm-1441){
                     width: 80px;
+                    height: 80px;
                 }
                 @media ($sm-1199){
                     width: 70px;
+                    height: 70px;
                 }
                 @media ($sm-991){
                     width: 60px;
+                    height: 60px;
                 }
                 @media ($sm-767){
                     width: 50px;
+                    height: 50px;
                 }
                 @media ($sm-579){
                     width: 30px;
+                    height: 30px;
                 }
                 img{
-                    max-width: 100%;
-                    display: block;
+                   width: 34px;
+                   @media ($sm-1441){
+                    width: 28px;
+                   }
+                   @media ($sm-1199){
+                    width: 20px;
+                   }
+                   @media ($sm-767){
+                    width: 14px;
+                   }
+                   @media ($sm-579){
+                    width: 10px;
+                   }
                 }
                 &.hidden{
                     display: none;
