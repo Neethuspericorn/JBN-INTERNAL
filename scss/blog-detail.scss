@@ -394,8 +394,12 @@
             @media ($sm-1199){
                 margin: 10px;
             }
+            @media ($sm-991){
+                padding: 12px;
+            }
             @media ($sm-479){
                 margin: 0;
+                padding: 10px;
             }
         }
         .thumb-wrp{
@@ -403,7 +407,25 @@
                 margin-bottom: 15px;
                 overflow: hidden;
                 position: relative;
-                max-height: 233px;
+                height: 233px;
+                @media ($sm-1679){
+                    height: 210px;
+                }
+                @media ($sm-1441){
+                    height: 190px;
+                }
+                @media ($sm-1199){
+                    height: 170px;
+                }
+                @media ($sm-991){
+                    height: 100px;
+                }
+                @media ($sm-767){
+                    height: 90px;
+                }
+                @media ($sm-479){
+                    height: 120px;
+                }
                 .play-btn{
                     width: 70px;
                     height: 70px;

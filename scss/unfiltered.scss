@@ -391,6 +391,7 @@
     line-height: 38px;
     color: #000000;
     font-weight: 600;
+    margin-bottom: 10px;
     @media ($sm-1679){
             font-size:30px;
             line-height: 35px;
@@ -402,6 +403,7 @@
         @media ($sm-1199){
             font-size:26px;
             line-height: 30px;
+            margin-bottom: 7px;
         }
         @media ($sm-991){
            font-size:22px;
@@ -444,7 +446,22 @@
                 margin-right: 35px;
                 width: calc((100% / 2) - 18px);
             }
-            @media (max-width:800px){
+            @media ($sm-1199){
+                margin-bottom: 20px;
+                margin-right: 30px;
+                width: calc((100% / 2) - 18px);
+            }
+            @media ($sm-991){
+                margin-bottom: 20px;
+                margin-right: 25px;
+                width: calc((100% / 2) - 18px);
+            }
+            @media ($sm-767){
+                margin-bottom: 20px;
+                margin-right: 20px;
+                width: calc((100% / 2) - 18px);
+            }
+            @media (max-width:579px){
                 width: 100%;
             }
             &:nth-child(even){
@@ -455,7 +472,22 @@
                 margin-bottom: 15px;
                 overflow: hidden;
                 position: relative;
-                max-height: 363px;
+                height: 303px;
+                @media ($sm-1679){
+                    height: 280px;
+                }
+                @media ($sm-1441){
+                    height: 250px;
+                }
+                @media ($sm-1199){
+                    height: 220px;
+                }
+                @media ($sm-991){
+                    height: 200px;
+                }
+                @media ($sm-767){
+                    height: 150px;
+                }
                 img{
                     border-radius: 8px;
                     width: 100%;
