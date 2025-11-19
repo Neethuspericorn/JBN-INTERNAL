@@ -444,6 +444,31 @@
   display: flex;
   margin-bottom: 52px;
 }
+@media (max-width: 1679px) {
+  .back-btn-wrp {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1441px) {
+  .back-btn-wrp {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 1199px) {
+  .back-btn-wrp {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .back-btn-wrp {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .back-btn-wrp {
+    margin-bottom: 20px;
+  }
+}
 .back-btn-wrp .back-btn {
   color: #2991FC;
   font-weight: 500;

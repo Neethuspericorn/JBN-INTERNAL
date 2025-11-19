@@ -316,6 +316,21 @@
         width: 100%;
         display: flex;
         margin-bottom: 52px;
+        @media ($sm-1679){
+            margin-bottom: 40px;
+        }
+        @media ($sm-1441){
+            margin-bottom: 35px;
+        }
+        @media ($sm-1199){
+            margin-bottom: 30px;
+        }
+        @media ($sm-991){
+            margin-bottom: 25px;
+        }
+        @media ($sm-767){
+            margin-bottom: 20px;
+        }
         .back-btn{
             color: #2991FC;
             font-weight: 500;
