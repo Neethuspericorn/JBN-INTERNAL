@@ -416,6 +416,14 @@
             font-size: 18px;
             line-height: 28px;
             color: $grayTxt;
+            @media ($sm-1679){
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                @media ($sm-1199){
+                    font-size: 14px;
+                    line-height: 20px;
+                }
         }
     }
     .featured-news-only{
@@ -456,29 +464,49 @@
                 }
                 .play-btn{
                     width: 70px;
+                    height: 70px;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     background-color: transparent;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     padding: 0;
                     border: 0;
+                    background-color: #ffffff4d;
+                    backdrop-filter: blur(30px);
+                    -webkit-backdrop-filter: blur(30px);
+                    flex-shrink: 0;
                     cursor: pointer;
                     @media ($sm-1679){
                         width: 60px;
+                        height: 60px;
                     }
                     @media ($sm-1441){
                         width: 50px;
+                        height: 50px;
                     }
                     @media ($sm-1199){
                         width: 40px;
+                        height: 40px;
                     }
                     @media ($sm-991){
                         width: 30px;
+                        height: 30px;
                     }
                     img{
-                        max-width: 100%;
+                        width: 20px;
+                        height: auto;
                         display: block;
+                        @media ($sm-1199){
+                            width: 15px;
+                        }
+                        @media ($sm-991){
+                            width: 10px;
+                        }
                     }
                     &.hidden{
                         display: none;
@@ -650,7 +678,19 @@
     }
 }
 }
-
+.video-modal{
+    .modal-content{
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .btn-close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 9;
+        filter: brightness(20.5);
+    }
+}
 .contributor-sec{
     width: 100%;
     display: flex;
@@ -771,6 +811,10 @@
             }
             @media ($sm-991){
                  margin-left: 30px;
+            }
+            @media ($sm-579){
+                padding-top: 20px;
+                margin-left: 0;
             }
             @media ($sm-479){
                 padding-top: 20px;

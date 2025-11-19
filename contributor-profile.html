@@ -209,7 +209,8 @@
                 <div class="featured-news-only">
                     <div class="feature-col">
                         <div class="thumb-wrp">
-                            <a class="play-btn" data-bs-target=""><img src="./img/play-btn.svg" alt=""></a>
+                            <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
                             <img src="img/list-img1.png" alt="">
                         </div>
                         <div class="content-wrp">
@@ -227,7 +228,8 @@
                     </div>
                     <div class="feature-col">
                         <div class="thumb-wrp">
-                            <a class="play-btn" data-bs-target=""><img src="./img/play-btn.svg" alt=""></a>
+                           <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
                              <img src="img/list-img2.png" alt="">
                         </div>
                         <div class="content-wrp">
@@ -245,6 +247,8 @@
                     </div>
                     <div class="feature-col">
                         <div class="thumb-wrp">
+                            <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
                              <img src="img/list-img4.png" alt="">
                         </div>
                         <div class="content-wrp">
@@ -262,6 +266,8 @@
                     </div>
                     <div class="feature-col">
                         <div class="thumb-wrp">
+                            <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
                              <img src="img/list-img3.png" alt="">
                         </div>
                         <div class="content-wrp">
@@ -511,6 +517,20 @@
 
         </footer>
     </main>
+    <!-- Modal -->
+        <div class="modal video-modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
@@ -562,6 +582,41 @@
         });
         $(function () { $(".btn-go-to").click(function () { $("html,body").animate({ scrollTop: $(".top").offset().top }, "3000"); return false }) })
         // scrolltop js
+        // modal video play
+        var videoModal = document.getElementById('videoModal');
+        var videoFrame = document.getElementById('videoFrame');
+
+        videoModal.addEventListener('show.bs.modal', function (event) {
+            let button = event.relatedTarget;
+            let videoUrl = button.getAttribute('data-video');
+            videoFrame.src = videoUrl + "?autoplay=1";
+        });
+
+        videoModal.addEventListener('hidden.bs.modal', function () {
+            videoFrame.src = "";
+        });
+        // modal video play
+
+        // video play inline
+        const video = document.getElementById("myVideo");
+        const playBtn = document.getElementById("playBtn");
+
+        // On click → start video
+        playBtn.addEventListener("click", () => {
+            video.play();
+            playBtn.classList.add("hidden"); // hide play button
+        });
+
+        // Also show play button when video is paused
+        video.addEventListener("pause", () => {
+            playBtn.classList.remove("hidden");
+        });
+
+        // Hide button again when playing
+        video.addEventListener("play", () => {
+            playBtn.classList.add("hidden");
+        });
+        // video play inline
     </script>
 </body>
 
