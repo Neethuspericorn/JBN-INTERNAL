@@ -201,7 +201,8 @@
                     <div>
                         <div class="blog-slide">
                             <div class="thumb-wrp">
-                                <a class="play-btn" data-bs-target=""><img src="./img/play-btn.svg" alt=""></a>
+                                 <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-btn.svg" alt=""></a>
                                 <img src="img/list-img2.png" alt="">
                             </div>
                             <div class="content-wrp">
@@ -224,7 +225,8 @@
                     <div>
                         <div class="blog-slide">
                             <div class="thumb-wrp">
-                                <a class="play-btn" data-bs-target=""><img src="./img/play-btn.svg" alt=""></a>
+                                 <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-btn.svg" alt=""></a>
                                 <img src="img/list-img2.png" alt="">
                             </div>
                             <div class="content-wrp">
@@ -247,7 +249,8 @@
                     <div>
                         <div class="blog-slide">
                             <div class="thumb-wrp">
-                                <a class="play-btn" data-bs-target=""><img src="./img/play-btn.svg" alt=""></a>
+                                <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-btn.svg" alt=""></a>
                                 <img src="img/list-img2.png" alt="">
                             </div>
                             <div class="content-wrp">
@@ -270,7 +273,8 @@
                     <div>
                         <div class="blog-slide">
                             <div class="thumb-wrp">
-                                <a class="play-btn" data-bs-target=""><img src="./img/play-btn.svg" alt=""></a>
+                                <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-btn.svg" alt=""></a>
                                 <img src="img/list-img2.png" alt="">
                             </div>
                             <div class="content-wrp">
@@ -520,10 +524,10 @@
 
         </footer>
         <!-- Modal -->
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal video-modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
-
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="modal-body p-0">
                         <div class="ratio ratio-16x9">
                             <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>

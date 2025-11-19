@@ -341,6 +341,18 @@
   }
 }
 
+.video-modal .modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.video-modal .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9;
+  filter: brightness(20.5);
+}
+
 .blog-slider-sec {
   padding-bottom: 180px;
 }
