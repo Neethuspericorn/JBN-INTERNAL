@@ -207,15 +207,15 @@
                     <div class="desc">Explore articles and insights from David Goldstein</div>
                 </div>
                 <div class="featured-news-only">
-                    <div class="feature-col">
+                    <a class="feature-col" href="#">
                         <div class="thumb-wrp">
-                            <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
-                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
+                            <button class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></button>
                             <img src="img/list-img1.png" alt="">
                         </div>
                         <div class="content-wrp">
                             <div class="feature-title">
-                                <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
+                                Feds Investigate Antisemitism at Princeton University
                             </div>
                             <div class="feature-desc">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
@@ -225,16 +225,16 @@
                                 <span class="author">By JBN News</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="feature-col">
+                    </a>
+                    <a class="feature-col" href="index.html">
                         <div class="thumb-wrp">
-                           <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
-                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
+                           <button class="play-btn open-video" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></button>
                              <img src="img/list-img2.png" alt="">
                         </div>
                         <div class="content-wrp">
                             <div class="feature-title">
-                                <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
+                                Feds Investigate Antisemitism at Princeton University
                             </div>
                             <div class="feature-desc">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
@@ -244,16 +244,16 @@
                                 <span class="author">By JBN News</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="feature-col">
+                    </a>
+                    <a class="feature-col" href="#">
                         <div class="thumb-wrp">
-                            <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
-                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
+                            <button class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></button>
                              <img src="img/list-img4.png" alt="">
                         </div>
                         <div class="content-wrp">
                             <div class="feature-title">
-                                <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
+                                Feds Investigate Antisemitism at Princeton University
                             </div>
                             <div class="feature-desc">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
@@ -263,16 +263,16 @@
                                 <span class="author">By JBN News</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="feature-col">
+                    </a>
+                    <a class="feature-col" href="#">
                         <div class="thumb-wrp">
-                            <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
-                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
+                            <button class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></button>
                              <img src="img/list-img3.png" alt="">
                         </div>
                         <div class="content-wrp">
                             <div class="feature-title">
-                                <a href="#" class="links">Feds Investigate Antisemitism at Princeton University</a>
+                                Feds Investigate Antisemitism at Princeton University
                             </div>
                             <div class="feature-desc">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
@@ -282,7 +282,7 @@
                                 <span class="author">By JBN News</span>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="load-more-wrp">
                     <a href="#" class="load-more">Load More</a>
@@ -617,6 +617,11 @@
             playBtn.classList.add("hidden");
         });
         // video play inline
+        document.querySelectorAll(".open-video").forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        e.stopPropagation(); // prevent <a> click
+    });
+});
     </script>
 </body>
 

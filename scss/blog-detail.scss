@@ -153,7 +153,7 @@
                         background-size: contain;
                         display: inline-block;
                         flex-shrink: 0;
-                        margin-right: 10px;
+                        margin-right: 15px;
                         @media ($sm-767){
                             margin-right: 10px;
                         }
@@ -162,7 +162,6 @@
                         text-decoration: none;
                         color: $primary;
                         display: inline-block;
-                        margin-left: 0;
                         &:hover{
                             color: $primary;
                         }
@@ -269,6 +268,8 @@
             font-size: 18px;
             line-height: 30px;
             font-weight: 500;
+            word-wrap: break-word;
+            word-break: break-word;
             @media ($sm-1441){
                 font-size: 16px;
                 line-height: 24px;
@@ -390,12 +391,21 @@
     }
     .blogSlider{
         margin-bottom: 0px;
+        .slick-track {
+            display: flex;
+        }
+        .slick-slide{
+            height: inherit;
+        }
         .blog-slide{
-            display: block;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
             box-shadow: 0px 3px 6px #0000000D;
             border-radius: 16px;
             padding: 18px;
             margin: 10px 18px;
+            height: calc(100% - 15px);
             @media ($sm-1679){
                 margin: 10px 15px;
             }
@@ -412,7 +422,14 @@
                 margin: 0;
                 padding: 10px;
             }
+            .content-wrp{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
         }
+
         .thumb-wrp{
                 border-radius: 8px;
                 margin-bottom: 15px;
@@ -490,9 +507,7 @@
                     object-fit: cover;
                 }
             }
-            .content-wrp{
-                padding: 0;
-            }
+            
             .date-stamp{
                 font: normal normal normal 17px/27px $font_txt;
                 color: $grayTxt;
@@ -543,7 +558,6 @@
                         text-decoration: none;
                         color: $primary;
                         display: inline-block;
-                        margin-left: 5px;
                         &:hover{
                             color: $primary;
                         }
@@ -559,6 +573,7 @@
             }
             .feature-title{
                 font: normal normal 600 18px/28px $font_txt;
+                color: #000000;
                 @media ($sm-1441){
                     font-size: 16px;
                     line-height: 24px;
@@ -571,8 +586,10 @@
             .feature-desc{
                color: $grayTxt;
                font: normal normal 400 18px/28px $font_txt;
-               word-break: break-word;
                padding: 25px 0;
+               word-wrap: break-word;
+               word-break: break-word;
+               flex-grow: 1;
                 @media ($sm-1441){
                     font-size: 16px;
                     line-height: 24px;

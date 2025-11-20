@@ -456,6 +456,7 @@
             width: calc((100% / 2) - 23px);
             box-shadow: 0px 3px 6px #0000000D;
             border-radius: 16px;
+            text-decoration: none;
             @media ($sm-1679){
                 margin-bottom: 20px;
                 margin-right: 35px;
@@ -634,7 +635,6 @@
                         text-decoration: none;
                         color: $primary;
                         display: inline-block;
-                        margin-left: 5px;
                         &:hover{
                             color: $primary;
                         }
@@ -661,6 +661,7 @@
             }
             .feature-title{
                 font: normal normal 600 18px/28px $font_txt;
+                color: #000000;
                 @media ($sm-1441){
                     font-size: 16px;
                     line-height: 24px;
@@ -675,6 +676,7 @@
                font: normal normal 400 18px/28px $font_txt;
                padding: 25px 0;
                flex: 1;
+               word-wrap: break-word;
                word-break: break-word;
                 @media ($sm-1441){
                     font-size: 16px;
@@ -806,24 +808,24 @@
         .profile-sec{
             padding-left: 90px;
             padding-top: 120px;
-            // width: 380px;
+            width: 380px;
             @media ($sm-1679){
-                // width: 300px;
+                width: 300px;
                 padding-left: 70px;
                 padding-top: 100px;
             }
             @media ($sm-1441){
-                // width: 240px;
+                width: 240px;
                 padding-left: 50px;
                 padding-top: 90px;
             }
             @media ($sm-1199){
-                // width: 200px;
+                width: 200px;
                 padding-left: 40px;
                 padding-top: 80px;
             }
             @media ($sm-991){
-                // width: 175px;
+                width: 175px;
                 padding-left: 30px;
                 padding-top: 60px;
 
@@ -1080,6 +1082,7 @@
                 font-size: 18px;
                 line-height: 28px;
                 font-weight: 300;
+                word-wrap: break-word;
                 @media ($sm-1679){
                     font-size: 16px;
                     line-height: 26px;
@@ -1088,9 +1091,6 @@
                     font-size: 14px;
                     line-height: 20px;
                 }
-            }
-            .profile-content{
-                word-break: break-word;
             }
         }
     }
