@@ -153,7 +153,7 @@
                         background-size: contain;
                         display: inline-block;
                         flex-shrink: 0;
-                        margin-right: 15px;
+                        margin-right: 10px;
                         @media ($sm-767){
                             margin-right: 10px;
                         }
@@ -162,7 +162,7 @@
                         text-decoration: none;
                         color: $primary;
                         display: inline-block;
-                        margin-left: 5px;
+                        margin-left: 0;
                         &:hover{
                             color: $primary;
                         }
@@ -391,6 +391,7 @@
     .blogSlider{
         margin-bottom: 0px;
         .blog-slide{
+            display: block;
             box-shadow: 0px 3px 6px #0000000D;
             border-radius: 16px;
             padding: 18px;
@@ -570,6 +571,7 @@
             .feature-desc{
                color: $grayTxt;
                font: normal normal 400 18px/28px $font_txt;
+               word-break: break-word;
                padding: 25px 0;
                 @media ($sm-1441){
                     font-size: 16px;
