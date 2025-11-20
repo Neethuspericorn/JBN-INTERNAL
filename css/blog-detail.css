@@ -227,6 +227,10 @@
     margin-right: 10px;
   }
 }
+.blog-detail-wrp .video-wrp .title-blk .date-stamp .author a {
+  text-decoration: none;
+  color: #2991FC;
+}
 .blog-detail-wrp .video-wrp .title-blk .date-stamp .date {
   position: relative;
   display: flex;
@@ -701,6 +705,10 @@
   .blog-slider-sec .blogSlider .date-stamp .author::before {
     margin-right: 10px;
   }
+}
+.blog-slider-sec .blogSlider .date-stamp .author a {
+  text-decoration: none;
+  color: #2991FC;
 }
 .blog-slider-sec .blogSlider .date-stamp.btm {
   border-top: 1px solid rgba(112, 112, 112, 0.2392156863);

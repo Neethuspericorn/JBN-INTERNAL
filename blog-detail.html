@@ -220,7 +220,7 @@
                                     <span class="author">By JBN News</span>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                     <div>
                         <div class="blog-slide">
@@ -244,12 +244,12 @@
                                     <span class="author">By JBN News</span>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                     <div>
                         <div class="blog-slide">
                             <div class="thumb-wrp">
-                                <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                                 <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
                             data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
                                 <img src="img/list-img2.png" alt="">
                             </div>
@@ -268,12 +268,12 @@
                                     <span class="author">By JBN News</span>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                     <div>
                         <div class="blog-slide">
                             <div class="thumb-wrp">
-                                <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                                 <a class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
                             data-video="https://www.youtube.com/embed/ScMzIvxBSi4"><img src="./img/play-icon-only.svg" alt=""></a>
                                 <img src="img/list-img2.png" alt="">
                             </div>
@@ -292,7 +292,7 @@
                                     <span class="author">By JBN News</span>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>
@@ -577,39 +577,39 @@
         $(function () { $(".btn-go-to").click(function () { $("html,body").animate({ scrollTop: $(".top").offset().top }, "3000"); return false }) })
         // scrolltop js
         $('.blogSlider').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: true,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: false,
+    arrows: false,
+    loop: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: false
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: false
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false
+            }
+        }
+    ]
+});
         $('.slick-prev').click(function () {
             $('.blogSlider').slick('slickPrev');
         });

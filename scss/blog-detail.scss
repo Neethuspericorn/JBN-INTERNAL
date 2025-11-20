@@ -158,6 +158,15 @@
                             margin-right: 10px;
                         }
                     }
+                    a{
+                        text-decoration: none;
+                        color: $primary;
+                        display: inline-block;
+                        margin-left: 5px;
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
                 }
                 .date{
                     position: relative;
@@ -380,6 +389,7 @@
         }
     }
     .blogSlider{
+        margin-bottom: 0px;
         .blog-slide{
             box-shadow: 0px 3px 6px #0000000D;
             border-radius: 16px;
@@ -526,6 +536,15 @@
                         margin-right: 15px;
                         @media ($sm-767){
                             margin-right: 10px;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $primary;
+                        display: inline-block;
+                        margin-left: 5px;
+                        &:hover{
+                            color: $primary;
                         }
                     }
                 }
