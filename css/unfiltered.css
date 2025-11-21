@@ -1447,6 +1447,7 @@
   line-height: 28px;
   font-weight: 300;
   word-wrap: break-word;
+  word-break: break-word;
 }
 @media (max-width: 1679px) {
   .contributor-sec .contributor-wrp .rt-sec .profile-cont {
