@@ -39,6 +39,10 @@
   color: #000000;
 }
 
+.btn-primary {
+  background-color: #2991FC;
+}
+
 .reach-sec {
   width: 100%;
   padding-bottom: 70px;

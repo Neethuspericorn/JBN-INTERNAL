@@ -508,21 +508,21 @@
 }
 
 .guide-listing-sec{
-    padding-bottom: 85px;
+    padding: 85px 0;
     @media ($sm-1679){
-         padding-bottom: 80px;
+         padding: 80px 0;
     }
     @media ($sm-1481){
-        padding-bottom: 70px;
+        padding: 70px 0;
     }
     @media ($sm-1199){
-        padding-bottom: 50px;
+        padding: 50px 0;
     }
     @media ($sm-991){
-        padding-bottom: 40px;
+        padding: 40px 0;
     }
     @media ($sm-767){
-        padding-bottom: 30px;
+        padding: 30px 0;
     }
     .sec-top{
         display: flex;
