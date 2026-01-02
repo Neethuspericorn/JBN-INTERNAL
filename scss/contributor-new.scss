@@ -10,7 +10,7 @@
     @media($sm-991){
         padding-bottom: 20px;
     }
-    @media(max-width:740px){
+    @media(max-width:600px){
         padding-bottom: 40px;
     }
     &.contributor-sec{
@@ -30,7 +30,7 @@
                     width: calc((100%/2) - 10px);
                     margin-right: 20px;
                 }
-                @media(max-width:740px){
+                @media(max-width:650px){
                     width: 100%;
                     margin-right: 0px;
                             margin-bottom: 20px;
@@ -40,12 +40,12 @@
                 &:nth-child(even){
                     margin-right: 0px;
                     //   width: calc(100%/2);
-                        @media(max-width:740px){
+                        @media(max-width:650px){
                     width: 100%;
                    
                 }
                 &:last-child{
-                    @media(max-width:740px){
+                    @media(max-width:650px){
                         margin-bottom: 0px;
                     } 
                 }
@@ -66,6 +66,12 @@
                         padding: 30px;
                     }
                     @media($sm-1199){
+                        padding: 20px;
+                    }
+                    @media($sm-991){
+                        padding: 15px;
+                    }
+                    @media(max-width:600px){
                         padding: 20px;
                     }
                     .top-sec{
@@ -99,6 +105,7 @@
                             .contribution-post{
                              @media(min-width: 992px){
                                 display: none;
+                                padding: 5px 0px;
                             }
                             }
                         
@@ -156,9 +163,10 @@
                                 @media($sm-991){
                                     // flex-wrap: wrap;
                                 }
-                                @media(max-width:740px){
+                                @media($sm-767){
                                     flex-wrap: nowrap;
                                     flex-direction: row;
+                                    justify-content: space-between;
                                 }
                                   @media(max-width:400px){
                                         flex-direction: column;
@@ -174,12 +182,25 @@
                                         margin-top: 0px;
                                      
                                     }
+                                    @media($sm-767){
+                                        flex-grow: unset !important;
+                                        width: 48%;
+                                    }
+                                    @media(max-width:650px){
+                                        width: 100%;
+                                    }
                                       @media(max-width:400px){
                                         margin-top: 10px;
                                     }
                                   
                                     &:first-child{
                                         margin-left: 0px;
+                                    }
+                                    .icon{
+                                        @media($sm-767){
+                                            margin-right: 8px;
+                                            width: 22px;
+                                        }
                                     }
                                     .info-cont {
                                       
@@ -192,6 +213,9 @@
                                         }
                                         @media($sm-991){
                                             font-size: 10px;
+                                        }
+                                        @media($sm-767){
+                                            flex: 1;
                                         }
                                     }
                                     .value {
@@ -235,7 +259,7 @@
                                     font-size: 20px;
                                     line-height: 30px;
                                 }
-                                @media(max-width:740px){
+                                @media(max-width:600px){
                                     margin-bottom: 0px;
                                 }
                                 @media($sm-767){
