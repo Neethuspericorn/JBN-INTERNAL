@@ -15,8 +15,11 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
-.feature-title {
+.contributor-lisitng .feature-title {
   padding-bottom: 40px;
+}
+.contributor-lisitng .value {
+  font-size: 12px;
 }
 
 .follow-us-new {
@@ -31,4 +34,6 @@
 .fetaured-news-detail {
   background: #F5F5F5 0% 0% no-repeat padding-box;
   padding: 40px 0px;
-}/*# sourceMappingURL=detail-page.css.map */
+}
+
+/*# sourceMappingURL=detail-page.css.map */
