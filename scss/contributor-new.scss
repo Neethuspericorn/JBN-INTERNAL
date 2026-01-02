@@ -375,6 +375,12 @@
         @media($sm-1481){
             margin-bottom: 40px;
         }
+        @media($sm-1199){
+            margin-bottom: 30px;
+        }
+        @media($sm-991){
+            margin-bottom: 25px;
+        }
     }
     .load-more-wrp{
         padding-top: 0px;

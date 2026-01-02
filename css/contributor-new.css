@@ -470,6 +470,16 @@
     margin-bottom: 40px;
   }
 }
+@media (max-width: 1199px) {
+  .filter-listing.contributor-lisitng .featured-news-only .feature-col {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .filter-listing.contributor-lisitng .featured-news-only .feature-col {
+    margin-bottom: 25px;
+  }
+}
 .filter-listing.contributor-lisitng .load-more-wrp {
   padding-top: 0px;
 }
