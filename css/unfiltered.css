@@ -534,22 +534,29 @@
 }
 
 .filter-listing {
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 @media (max-width: 1679px) {
   .filter-listing {
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 @media (max-width: 1481px) {
   .filter-listing {
+    padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 @media (max-width: 1199px) {
   .filter-listing {
+    padding-top: 25px;
     padding-bottom: 25px;
   }
+}
+.filter-listing.latest-contributor {
+  background-color: #F4F9FF;
 }
 .filter-listing .title-wrp {
   margin-bottom: 58px;
@@ -580,7 +587,7 @@
   }
 }
 .filter-listing .title-wrp .title {
-  font-size: 33px;
+  font-size: 30px;
   line-height: 38px;
   color: #000000;
   font-weight: 600;
@@ -588,27 +595,27 @@
 }
 @media (max-width: 1679px) {
   .filter-listing .title-wrp .title {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 28px;
+    line-height: 38px;
   }
 }
 @media (max-width: 1441px) {
   .filter-listing .title-wrp .title {
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 @media (max-width: 1199px) {
   .filter-listing .title-wrp .title {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 34px;
     margin-bottom: 7px;
   }
 }
 @media (max-width: 991px) {
   .filter-listing .title-wrp .title {
     font-size: 22px;
-    line-height: 27px;
+    line-height: 32px;
   }
 }
 @media (max-width: 767px) {
@@ -618,8 +625,8 @@
   }
 }
 .filter-listing .title-wrp .desc {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 17px;
+  line-height: 27px;
   color: #787878;
 }
 @media (max-width: 1679px) {
@@ -816,7 +823,8 @@
   }
 }
 .filter-listing .featured-news-only .feature-col .date-stamp {
-  font: normal normal normal 17px/27px "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
   color: #787878;
   margin-bottom: 9px;
   display: flex;
@@ -857,11 +865,27 @@
 }
 .filter-listing .featured-news-only .feature-col .date-stamp .author {
   font-weight: 600;
-  color: #2991FC;
+  color: #0058B2;
+  font-size: 17px;
   position: relative;
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+@media (max-width: 1679px) {
+  .filter-listing .featured-news-only .feature-col .date-stamp .author {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1481px) {
+  .filter-listing .featured-news-only .feature-col .date-stamp .author {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1199px) {
+  .filter-listing .featured-news-only .feature-col .date-stamp .author {
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
   .filter-listing .featured-news-only .feature-col .date-stamp .author {
@@ -1249,35 +1273,35 @@
 }
 .contributor-sec .contributor-wrp .rt-sec .title {
   color: #000000;
-  font-size: 38px;
-  line-height: 48px;
-  margin-bottom: 37px;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 30px;
   font-weight: 600;
 }
 @media (max-width: 1679px) {
   .contributor-sec .contributor-wrp .rt-sec .title {
-    font-size: 34px;
-    line-height: 44px;
-    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 1441px) {
   .contributor-sec .contributor-wrp .rt-sec .title {
-    font-size: 32px;
-    line-height: 42px;
-    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 1199px) {
   .contributor-sec .contributor-wrp .rt-sec .title {
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 991px) {
   .contributor-sec .contributor-wrp .rt-sec .title {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
     margin-bottom: 15px;
   }
@@ -1413,21 +1437,16 @@
 .contributor-sec .contributor-wrp .rt-sec .contribution-post .info .info-cont .value {
   color: #4C5669;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 15px;
 }
 @media (max-width: 1679px) {
-  .contributor-sec .contributor-wrp .rt-sec .contribution-post .info .info-cont .value {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1199px) {
   .contributor-sec .contributor-wrp .rt-sec .contribution-post .info .info-cont .value {
     font-size: 14px;
   }
 }
 @media (max-width: 767px) {
   .contributor-sec .contributor-wrp .rt-sec .contribution-post .info .info-cont .value {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .contributor-sec .contributor-wrp .rt-sec .abt-sec {
@@ -1470,24 +1489,24 @@
   max-width: 100%;
   display: block;
 }
-.contributor-sec .contributor-wrp .rt-sec .profile-cont {
+.contributor-sec .contributor-wrp .rt-sec .profile-content {
   color: #4C5669;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 300;
   word-wrap: break-word;
   word-break: break-word;
 }
 @media (max-width: 1679px) {
-  .contributor-sec .contributor-wrp .rt-sec .profile-cont {
-    font-size: 16px;
-    line-height: 26px;
+  .contributor-sec .contributor-wrp .rt-sec .profile-content {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 @media (max-width: 1199px) {
-  .contributor-sec .contributor-wrp .rt-sec .profile-cont {
-    font-size: 14px;
-    line-height: 20px;
+  .contributor-sec .contributor-wrp .rt-sec .profile-content {
+    font-size: 12px;
+    line-height: 22px;
   }
 }
 

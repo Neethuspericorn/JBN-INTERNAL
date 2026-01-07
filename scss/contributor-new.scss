@@ -76,7 +76,8 @@
                     }
                     .top-sec{
                         display: flex;
-                        margin-bottom: 40px;
+                        margin-bottom: 30px;
+                        // margin-bottom: 40px;
                             align-items: center;
                         @media($sm-1679){
                             margin-bottom: 20px;
@@ -113,8 +114,8 @@
                       
 
                         .profile-holder{
-                            width: 133px;
-                            height: 133px;
+                            width: 125px;
+                            height: 125px;
                             margin-bottom: 0px;
                             @media($sm-1679){
                                 height: 120px;
@@ -219,11 +220,12 @@
                                         }
                                     }
                                     .value {
+                                        font-size: 15px;
                                          @media($sm-1679){
-                                            font-size: 15px;
+                                            font-size: 14px;
                                         }
                                          @media($sm-1481){
-                                            font-size: 14px;
+                                            // font-size: 14px;
                                         }
                                         @media($sm-1199){
                                             font-size: 12px;
@@ -234,37 +236,37 @@
                             }
                             .title{
  
-                                font-size: 30px;
-                                line-height: 40px;
+                                font-size: 22px;
+                                line-height: 32px;
                                 font-weight: 600;
                                 letter-spacing: 0px;
                                 margin-bottom: 15px;
                                 color: #000000;
                                 @media($sm-1679){
-                                    font-size: 26px;
-                                    line-height: 36px;
+                                    font-size: 20px;
+                                    line-height: 30px;
                                     // margin-bottom: 20px;
                                 }
                                 @media($sm-1481){
-                                    font-size: 24px;
-                                    line-height: 34px;
+                                    font-size: 18px;
+                                    line-height: 28px;
                                     // margin-bottom:18px ;
                                 }
                                 @media($sm-1199){
-                                    font-size: 22px;
-                                    line-height: 32px;
+                                    // font-size: 22px;
+                                    // line-height: 32px;
                                     margin-bottom: 10px;
                                 }
                                 @media($sm-991){
-                                    font-size: 20px;
-                                    line-height: 30px;
+                                    // font-size: 20px;
+                                    // line-height: 30px;
                                 }
                                 @media(max-width:600px){
                                     margin-bottom: 0px;
                                 }
                                 @media($sm-767){
-                                    font-size: 18px;
-                                    line-height: 28px;
+                                    // font-size: 18px;
+                                    // line-height: 28px;
                                 }
                                 @media($sm-579){
                                     font-size: 16px;
@@ -282,7 +284,7 @@
                     color: #0C1B2B;
                     font-size: 17px;
                     font-weight: 600;
-                    margin-bottom: 26px;
+                    margin-bottom: 14px;
                     @media($sm-1679){
                         font-size: 15px;
                         margin-bottom: 10px;
@@ -311,8 +313,8 @@
                     letter-spacing: 0px;
                     color: #4C5669;
                     font-weight: 300;
-                    font-size: 18px;
-                    line-height: 30px;
+                    font-size: 16px;
+                    line-height: 26px;
                     word-break: break-all;
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
@@ -320,8 +322,8 @@
                     overflow: hidden;
                     flex: 1;
                     @media($sm-1679){
-                        font-size: 16px;
-                        line-height: 26px;
+                        font-size: 15px;
+                        line-height: 25px;
                     }
                     @media($sm-1481){
                         font-size: 14px;
@@ -340,13 +342,13 @@
     
                         letter-spacing: 0px;
                         color: #2991FC;
-                        font-size: 20px;
+                        font-size: 16px;
                         font-weight: 600;
                         @media($sm-1679){
-                            font-size: 17px;
+                            font-size: 15px;
                         }
                         @media($sm-1481){
-                            font-size: 16px;
+                            // font-size: 16px;
                         }
                         @media($sm-1199){
                             font-size: 14px;
@@ -359,30 +361,30 @@
     }
 }
 
-.filter-listing.contributor-lisitng{
-    padding-bottom: 45px;
-    @media($sm-1679){
-        padding-bottom: 35px;
-    }
-    @media($sm-1481){
-        padding-bottom: 25px;
-    }
-    .featured-news-only .feature-col{
-        margin-bottom: 70px;
-        @media($sm-1679){
-            margin-bottom: 50px;
-        }
-        @media($sm-1481){
-            margin-bottom: 40px;
-        }
-        @media($sm-1199){
-            margin-bottom: 30px;
-        }
-        @media($sm-991){
-            margin-bottom: 25px;
-        }
-    }
-    .load-more-wrp{
-        padding-top: 0px;
-    }
-}
+// .filter-listing.contributor-lisitng{
+//     padding-bottom: 45px;
+//     @media($sm-1679){
+//         padding-bottom: 35px;
+//     }
+//     @media($sm-1481){
+//         padding-bottom: 25px;
+//     }
+//     .featured-news-only .feature-col{
+//         margin-bottom: 70px;
+//         @media($sm-1679){
+//             margin-bottom: 50px;
+//         }
+//         @media($sm-1481){
+//             margin-bottom: 40px;
+//         }
+//         @media($sm-1199){
+//             margin-bottom: 30px;
+//         }
+//         @media($sm-991){
+//             margin-bottom: 25px;
+//         }
+//     }
+//     .load-more-wrp{
+//         padding-top: 0px;
+//     }
+// }

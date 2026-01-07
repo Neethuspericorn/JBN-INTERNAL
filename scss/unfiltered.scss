@@ -384,18 +384,25 @@
 }
 
 .filter-listing{
+    padding-top: 50px;
     padding-bottom: 50px;
     @media($sm-1679){
+        padding-top: 40px;
         padding-bottom: 40px;
     }
     @media($sm-1481){
+        padding-top: 30px;
         padding-bottom: 30px;
     }
     @media($sm-1199){
+        padding-top: 25px;
         padding-bottom: 25px;
     }
     @media($sm-991){
         // padding-bottom: 10px;
+    }
+    &.latest-contributor{
+        background-color: #F4F9FF;
     }
     .title-wrp{
         margin-bottom: 58px;
@@ -415,27 +422,27 @@
             margin-bottom: 20px;
         }
         .title{
-    font-size:33px;
+    font-size:30px;
     line-height: 38px;
     color: #000000;
     font-weight: 600;
     margin-bottom: 10px;
     @media ($sm-1679){
-            font-size:30px;
-            line-height: 35px;
+            font-size:28px;
+            line-height: 38px;
         }
         @media ($sm-1441){
-            font-size:28px;
-            line-height: 33px;
+            font-size:26px;
+            line-height: 36px;
         }
         @media ($sm-1199){
-            font-size:26px;
-            line-height: 30px;
+            font-size:24px;
+            line-height: 34px;
             margin-bottom: 7px;
         }
         @media ($sm-991){
            font-size:22px;
-            line-height: 27px;
+            line-height: 32px;
         }
         @media ($sm-767){
             font-size:20px;
@@ -443,8 +450,8 @@
         }
         }
         .desc{
-            font-size: 18px;
-            line-height: 28px;
+            font-size: 17px;
+            line-height: 27px;
             color: $grayTxt;
             @media ($sm-1679){
                     font-size: 16px;
@@ -596,7 +603,9 @@
                 }
             }
             .date-stamp{
-                font: normal normal normal 17px/27px $font_txt;
+                // font: normal normal normal 17px/27px $font_txt;
+                font-weight: 300;
+                font-size: 17px;
                 color: $grayTxt;
                 margin-bottom: 9px;
                 display: flex;
@@ -628,11 +637,21 @@
                 }
                 .author{
                     font-weight: 600;
-                    color: $primary;
+                    color: #0058B2;
+                    font-size: 17px;
                     position: relative;
                     display: flex;
                     align-items: center;
                     margin-left: auto;
+                    @media($sm-1679){
+                        font-size: 16px;
+                    }
+                    @media($sm-1481){
+                        font-size: 15px;
+                    }
+                    @media($sm-1199){
+                        font-size:14px;
+                    }
                     @media ($sm-767){
                         margin-left: 0;
                         margin-top: 5px;
@@ -862,8 +881,8 @@
                 margin: 0 auto;
             }
             .profile-holder{
-                width: 265px;
-                height: 265px;
+                width: 225px;
+                height: 225px;
                 border: 5px solid #E6F3FF;
                 border-radius: 50%;
                 flex-shrink: 0;
@@ -932,27 +951,27 @@
             }
             .title{
                 color: #000000;
-                font-size: 38px;
-                line-height: 48px;
-                margin-bottom: 37px;
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 30px;
                 font-weight: 600;
                 @media ($sm-1679){
-                    font-size: 34px;
-                    line-height: 44px;
-                    margin-bottom: 30px;
-                }
-                @media ($sm-1441){
-                    font-size: 32px;
-                    line-height: 42px;
+                    font-size: 28px;
+                    line-height: 38px;
                     margin-bottom: 25px;
                 }
-                @media ($sm-1199){
-                    font-size: 28px;
-                    line-height: 40px;
+                @media ($sm-1441){
+                    font-size: 26px;
+                    line-height: 36px;
                     margin-bottom: 20px;
                 }
-                @media ($sm-991){
+                @media ($sm-1199){
                     font-size: 24px;
+                    line-height: 34px;
+                    margin-bottom: 15px;
+                }
+                @media ($sm-991){
+                    font-size: 22px;
                     line-height: 32px;
                     margin-bottom: 15px;
                 }
@@ -1053,15 +1072,15 @@
                         .value{
                             color: #4C5669;
                             font-weight: 600;
-                            font-size: 17px;
+                            font-size: 15px;
                             @media ($sm-1679){
-                                font-size: 16px;
-                            }
-                            @media ($sm-1199){
                                 font-size: 14px;
                             }
+                            @media ($sm-1199){
+                                // font-size: 14px;
+                            }
                             @media ($sm-767){
-                                font-size: 13px;
+                                font-size: 12px;
                             }
                         }
                     }
@@ -1099,20 +1118,20 @@
                     }
                 }
             }
-            .profile-cont{
+            .profile-content{
                 color: #4C5669;
-                font-size: 18px;
-                line-height: 28px;
+                font-size: 16px;
+                line-height: 26px;
                 font-weight: 300;
                 word-wrap: break-word;
                 word-break: break-word;
                 @media ($sm-1679){
-                    font-size: 16px;
-                    line-height: 26px;
+                    font-size: 14px;
+                    line-height: 24px;
                 }
                 @media ($sm-1199){
-                    font-size: 14px;
-                    line-height: 20px;
+                    font-size: 12px;
+                    line-height: 22px;
                 }
             }
         }
