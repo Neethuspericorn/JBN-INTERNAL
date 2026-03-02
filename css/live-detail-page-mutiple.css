@@ -194,6 +194,8 @@
 .news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks .comment-item {
   padding-top: 20px;
   display: flex;
+  text-decoration: none;
+  color: #1A1A1A;
 }
 .news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks .comment-item .usr-img {
   width: 64px;
