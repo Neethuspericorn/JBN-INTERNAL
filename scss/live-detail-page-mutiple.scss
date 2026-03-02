@@ -6,6 +6,16 @@
             border-bottom: 2px solid #D1D5DC;
             padding-bottom: 20px;
             margin-bottom: 32px;
+            @media ($sm-1679){
+                padding-bottom: 18px;
+                margin-bottom: 30px;
+            }
+            @media ($sm-1199){
+                 margin-bottom: 28px;
+            }
+            @media ($sm-767){
+                margin-bottom: 24px;
+            }
         }
 
         .main-head {
@@ -16,7 +26,24 @@
             // font-family: $titleFont;
             display: flex;
             align-items: center;
-
+            @media ($sm-1679){
+                font-size: 34px;
+            }
+            @media ($sm-1481){
+                font-size: 32px;
+            }
+            @media ($sm-1199){
+                font-size: 30px;
+            }
+            @media ($sm-991){
+                font-size: 28px;
+            }
+            @media ($sm-767){
+                font-size: 26px;
+            }
+            @media ($sm-579){
+                font-size: 27px;
+            }
             .status {
                 width: 14px;
                 height: 14px;
@@ -37,7 +64,7 @@
             display: flex;
             padding-bottom: 93px;
 
-            @media(max-width:991px) {
+            @media(max-width:767px) {
                 flex-direction: column;
             }
 
@@ -58,27 +85,56 @@
                 @media ($sm-1281) {
                     font-size: 12px;
                     line-height: 20px;
-                    padding-right: 0px;
-                    width: 100%;
                 }
-
+                @media ($sm-767){
+                    width: 100%;
+                    padding-right: 0;
+                }
                 .post-title {
                     color: #1A1A1A;
                     font-weight: 700;
                     font-size: 30px;
                     line-height: 36px;
                     margin-bottom: 10px;
+                    @media ($sm-1679){
+                        font-size: 28px;
+                        line-height: 34px;
+                    }
+                    @media ($sm-1481){
+                        font-size: 26px;
+                        line-height: 32px;
+                    }
+                    @media ($sm-1199){
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                    @media ($sm-991){
+                        font-size: 22px;
+                        line-height: 26px;
+                    }
+                    @media ($sm-767){
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
                 }
 
                 
                 p {
                     font-size: 18px;
-                    line-height: 32px;
-                    padding-right: 38px;
-                    line-height: 34px;
+                    line-height: 30px;
+                    padding-right: 0;
 
                     @media ($sm-1679) {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    @media ($sm-1199) {
                         font-size: 15px;
+                        line-height: 22px;
+                    }
+                    @media ($sm-767){
+                        font-size: 14px;
+                        line-height: 23px;
                     }
                 }
 
@@ -86,6 +142,18 @@
                     border-bottom: 1px solid #D1D5DC;
                     padding-bottom: 49px;
                     margin-bottom: 48px;
+                    @media ($sm-1679){
+                        padding-bottom: 40px;
+                        margin-bottom: 40px;
+                    }
+                    @media ($sm-1199){
+                        padding-bottom: 35px;
+                        margin-bottom: 35px;
+                    }
+                    @media ($sm-767){
+                        padding-bottom: 10px;
+                        margin-bottom: 32px;
+                    }
                 }
 
                 .load-more-button {
@@ -102,7 +170,21 @@
                     text-transform: uppercase;
                     text-decoration: none;
                     transition: background-color 0.3s linear;
-
+                    @media ($sm-1679){
+                        height: 50px;
+                        font-size: 13px;
+                    }
+                    @media ($sm-1481){
+                        height: 48px;
+                    }
+                    @media ($sm-1199){
+                        height: 46px;
+                    }
+                    @media ($sm-767){
+                        height: 44px;
+                        font-size: 12px;
+                        padding: 10px 15px;
+                    }
                     &:hover {
                         background-color: #000;
                         color: #fff;
@@ -115,6 +197,30 @@
                     position: relative;
                     margin-bottom: 24px;
                     height: 563px;
+                    @media ($sm-1679){
+                        height: 480px;
+                        margin-bottom: 20px;
+                    }
+                    @media ($sm-1481){
+                        height: 460px;
+                    }
+                    @media ($sm-1281){
+                        height: 390px;
+                    }
+                    @media ($sm-1199){
+                        height: 360px;
+                    }
+                    @media ($sm-1199){
+                        height: 360px;
+                    }
+                    @media ($sm-767){
+                        margin-bottom: 18px;
+                        height: 250px;
+                    }
+                    @media ($sm-579){
+                        margin-bottom: 18px;
+                        height: 212px;
+                    }
                     img{
                         width: 100%;
                         height: 100%;
@@ -136,6 +242,10 @@
                         left: 20px;
                         top: 20px;
                         letter-spacing: 1px;
+                        @media ($sm-767){
+                            font-size: 9px;
+                            height: 25px;
+                        }
 
                         span {
                             color: #fff;
@@ -164,6 +274,15 @@
                         position: absolute;
                         left: 20px;
                         bottom: 16px;
+                        @media ($sm-1679){
+                            font-size: 13px;
+                        }
+                        @media ($sm-1199){
+                            font-size: 12px;
+                        }
+                        @media ($sm-767){
+                            font-size: 10px;
+                        }
                     }
                 }
             }
@@ -175,9 +294,27 @@
                 flex-direction: column;
                 align-self: flex-start;
                 padding-top: 20px;
-
+                @media ($sm-767){
+                    width: 100%;
+                    padding-top: 0;
+                }
                 .side-list-blocks {
                     padding-top: 40px;
+                    @media ($sm-1679){
+                        padding-top: 35px;
+                    }
+                    @media ($sm-1481){
+                        padding-top: 30px;
+                    }
+                    @media ($sm-1199){
+                        padding-top: 25px;
+                    }
+                    @media ($sm-991){
+                        padding-top: 25px;
+                    }
+                    @media ($sm-767){
+                        padding-top: 20px;
+                    }
                     .title-sec {
                         width: 100%;
                         padding-bottom: 8px;
@@ -194,12 +331,18 @@
                     .ad-wrapper{
                         border: 1px solid #D1D5DC;
                         padding: 1px;
+                        @media ($sm-767){
+                            margin: 0 auto;
+                        }
                     }
                     .exclusive{
                         color: #E7000B;
                         font-weight: 700;
                         font-size: 9px;
                         text-transform: uppercase;
+                        @media ($sm-767){
+                            font-size: 7px;
+                        }
                     }
                     .title {
                         padding-top: 25px;
@@ -208,6 +351,21 @@
                         font-size: 12px;
                         text-transform: uppercase;
                         letter-spacing: 1.2px;
+                        @media ($sm-1679){
+                            padding-top: 20px;
+                        }
+                        @media ($sm-1481){
+                            padding-top: 18px;
+                        }
+                        @media ($sm-1199){
+                            padding-top: 16px;
+                        }
+                        @media ($sm-991){
+                            padding-top: 14px;
+                        }
+                        @media ($sm-767){
+                            padding-top: 12px;
+                        }
                     }
 
                     .comment-item {
@@ -215,7 +373,12 @@
                         display: flex;
                         text-decoration: none;
                         color: #1A1A1A;
-
+                        @media ($sm-1199){
+                            padding-top: 16px;
+                        }
+                        @media ($sm-767){
+                            padding-top: 11px;
+                        }
                         .usr-img {
                             width: 64px;
                             height: 64px;
@@ -245,6 +408,11 @@
                             @media ($sm-991) {
                                 margin-right: 10px;
                             }
+                             @media ($sm-767) {
+                                width: 49px;
+                                height: 49px;
+                                flex: 0 0 49px;
+                             }
 
                             img.cm-img {
                                 width: 100%;
@@ -261,12 +429,24 @@
                                 font-size: 14px;
                                 line-height: 17px;
                                 margin-bottom: 4px;
+                                @media ($sm-1679){
+                                    font-size: 13px;
+                                }
+                                @media ($sm-767){
+                                    font-size: 12px;
+                                }
                             }
                             .tag-affair{
                                 font-size: 10px;
                                 text-transform: uppercase;
                                 color: #6A7282;
                                 letter-spacing: 0.25px;
+                                @media ($sm-1679){
+                                    font-size: 9px;
+                                }
+                                @media ($sm-767){
+                                    font-size: 8px;
+                                }
                             }
                         }
                     }
@@ -291,6 +471,12 @@
                                 padding-left: 14px;
                                 .cmt-title{
                                     margin-bottom: 0;
+                                    @media ($sm-1679){
+                                        font-size: 13px;
+                                    }
+                                    @media ($sm-767){
+                                        font-size: 12px;
+                                    }
                                 }
                             }
                         }
@@ -315,6 +501,10 @@
                     text-transform: uppercase;
                     text-decoration: none;
                     transition: background-color 0.3s linear;
+                    @media ($sm-767){
+                        height: 31px;
+                        font-size: 9px;
+                    }
 
                     &:hover {
                         background-color: #000;
