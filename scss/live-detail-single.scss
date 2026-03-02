@@ -57,7 +57,7 @@
     }
 }
 
-button.btn.btn-live {
+.btn-live {
     border: 2.5px solid #101828;
     margin-top: 9px;
     height: 57px;
@@ -65,6 +65,11 @@ button.btn.btn-live {
     font-weight: 500;
     border-radius: 0px;
     font-size: 17px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #101828;
 
     @media(max-width:1679px) {
         font-size: 14px;
@@ -404,4 +409,9 @@ button.btn.btn-live {
             }
         }
     }
+}
+
+.link{
+    text-decoration: none;
+    color: #101828;
 }

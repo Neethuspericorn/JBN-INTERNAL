@@ -620,4 +620,9 @@
 .news-detail.live-updates-multiple .post-detail-section .side-bar .load-more-button:hover {
   background-color: #000;
   color: #fff;
+}
+
+.link {
+  text-decoration: none;
+  color: #101828;
 }/*# sourceMappingURL=live-detail-page-mutiple.css.map */
