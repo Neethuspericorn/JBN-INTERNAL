@@ -184,7 +184,8 @@
 .contributor-listing-page.contributor-sec .contributor-inner .contributor-wrp .profile-sec .top-sec .profile-holder img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .contributor-listing-page.contributor-sec .contributor-inner .contributor-wrp .profile-sec .top-sec .rt-sec {
   padding: 0px;
@@ -421,6 +422,4 @@
   .contributor-listing-page.contributor-sec .contributor-inner .contributor-wrp .read-more .read-link {
     font-size: 14px;
   }
-}
-
-/*# sourceMappingURL=contributor-new.css.map */
+}/*# sourceMappingURL=contributor-new.css.map */
