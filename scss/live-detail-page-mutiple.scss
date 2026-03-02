@@ -70,11 +70,7 @@
                     margin-bottom: 10px;
                 }
 
-                img {
-                    max-height: 563px;
-                    margin: 0;
-                }
-
+                
                 p {
                     font-size: 18px;
                     line-height: 32px;
@@ -118,6 +114,12 @@
                     display: block;
                     position: relative;
                     margin-bottom: 24px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        max-height: 563px;
+                        object-fit: cover;
+                    }
 
                     .live-tag {
                         background-color: #E7000B;
@@ -172,14 +174,21 @@
                 display: flex;
                 flex-direction: column;
                 align-self: flex-start;
+                padding-top: 20px;
 
                 .side-list-blocks {
-                    
+                    padding-top: 40px;
                     .title-sec {
                         width: 100%;
                         padding-bottom: 8px;
                         border-top: 1px solid #D1D5DC;
                         border-bottom: 1px solid #D1D5DC;
+                        &.ad{
+                            .title{
+                                color: #99A1AF;
+                                text-align: center;
+                            }
+                        }
                     }
                     .exclusive{
                         color: #E7000B;
