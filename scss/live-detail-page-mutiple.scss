@@ -114,10 +114,10 @@
                     display: block;
                     position: relative;
                     margin-bottom: 24px;
+                    height: 563px;
                     img{
                         width: 100%;
                         height: 100%;
-                        max-height: 563px;
                         object-fit: cover;
                     }
 
@@ -187,8 +187,13 @@
                             .title{
                                 color: #99A1AF;
                                 text-align: center;
+                                font-weight: 400;
                             }
                         }
+                    }
+                    .ad-wrapper{
+                        border: 1px solid #D1D5DC;
+                        padding: 1px;
                     }
                     .exclusive{
                         color: #E7000B;
@@ -264,6 +269,56 @@
                                 letter-spacing: 0.25px;
                             }
                         }
+                    }
+                    &.editors{
+                        .title-sec{
+                            .title{
+                                display: flex;
+                                align-items: center;
+                                .icon{
+                                    width: 14px;
+                                    margin-right: 8px;
+                                }
+                                img{
+                                    max-width: 100%;
+                                    display: block;
+                                }
+                            }
+                        }
+                        .comment-item{
+                            .cmt-txt{
+                                border-left: 2px solid #D1D5DC;
+                                padding-left: 14px;
+                                .cmt-title{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-block{
+                    border-top: 1px solid #D1D5DC;
+                    padding-top: 17px;
+                    margin-top: 20px;
+                }
+                .load-more-button {
+                    width: 100%;
+                    height: 33px;
+                    padding: 8px 15px;
+                    border: 2px solid #101828;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 500;
+                    color: #1A1A1A;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    transition: background-color 0.3s linear;
+
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
                     }
                 }
             }

@@ -119,11 +119,11 @@
   display: block;
   position: relative;
   margin-bottom: 24px;
+  height: 563px;
 }
 .news-detail.live-updates-multiple .post-detail-section .post-content .live-image-cover img {
   width: 100%;
   height: 100%;
-  max-height: 563px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -187,6 +187,11 @@
 .news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks .title-sec.ad .title {
   color: #99A1AF;
   text-align: center;
+  font-weight: 400;
+}
+.news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks .ad-wrapper {
+  border: 1px solid #D1D5DC;
+  padding: 1px;
 }
 .news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks .exclusive {
   color: #E7000B;
@@ -261,4 +266,47 @@
   text-transform: uppercase;
   color: #6A7282;
   letter-spacing: 0.25px;
+}
+.news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks.editors .title-sec .title {
+  display: flex;
+  align-items: center;
+}
+.news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks.editors .title-sec .title .icon {
+  width: 14px;
+  margin-right: 8px;
+}
+.news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks.editors .title-sec .title img {
+  max-width: 100%;
+  display: block;
+}
+.news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks.editors .comment-item .cmt-txt {
+  border-left: 2px solid #D1D5DC;
+  padding-left: 14px;
+}
+.news-detail.live-updates-multiple .post-detail-section .side-bar .side-list-blocks.editors .comment-item .cmt-txt .cmt-title {
+  margin-bottom: 0;
+}
+.news-detail.live-updates-multiple .post-detail-section .side-bar .btn-block {
+  border-top: 1px solid #D1D5DC;
+  padding-top: 17px;
+  margin-top: 20px;
+}
+.news-detail.live-updates-multiple .post-detail-section .side-bar .load-more-button {
+  width: 100%;
+  height: 33px;
+  padding: 8px 15px;
+  border: 2px solid #101828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #1A1A1A;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s linear;
+}
+.news-detail.live-updates-multiple .post-detail-section .side-bar .load-more-button:hover {
+  background-color: #000;
+  color: #fff;
 }/*# sourceMappingURL=live-detail-page-mutiple.css.map */
