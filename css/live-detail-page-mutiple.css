@@ -14,4 +14,25 @@
 /**** smaller than desktop 1200 (devices and browsers) ***/
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
-/*** WSXGA (Wide Super Extended Graphics Array) resolution ***//*# sourceMappingURL=detail-page-updates-new.css.map */
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.news-detail.live-updates-multiple .main-head {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin-bottom: 8px;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  align-items: center;
+}
+.news-detail.live-updates-multiple .main-head .status {
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  background-color: #E7000B;
+  display: inline-block;
+  margin-right: 12px;
+}
+.news-detail.live-updates-multiple .news-sub {
+  color: #4A5565;
+  font-size: 14px;
+}/*# sourceMappingURL=live-detail-page-mutiple.css.map */

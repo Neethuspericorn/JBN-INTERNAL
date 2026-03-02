@@ -1,0 +1,27 @@
+@import 'partials';
+.news-detail{
+    &.live-updates-multiple{
+        .main-head{
+            font-size: 36px;
+            font-weight: 700;
+            color: #1A1A1A;
+            margin-bottom: 8px;
+            font-family: $titleFont;
+            display: flex;
+            align-items: center;
+            .status{
+                width: 14px;
+                height: 14px;
+                border-radius: 14px;
+                background-color: #E7000B;
+                display: inline-block;
+                margin-right: 12px;
+            }
+
+        }
+        .news-sub{
+            color: #4A5565;
+            font-size: 14px;
+        }
+    }
+}
