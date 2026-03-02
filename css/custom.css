@@ -774,13 +774,15 @@ img {
 .video-listing .modal-header {
   justify-content: space-between;
   font: normal normal 600 18px/30px "Poppins", sans-serif;
-  color: #15355A;
 }
 @media (max-width: 1679px) {
   .video-listing .modal-header {
     font-size: 16px;
     line-height: 24px;
   }
+}
+.video-listing .modal-header {
+  color: #15355A;
 }
 .video-listing .close {
   color: #fff;
