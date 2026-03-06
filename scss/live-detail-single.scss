@@ -1,3 +1,4 @@
+@import 'partials';
 .back-section {
     margin-bottom: 17px;
 
@@ -57,7 +58,7 @@
     }
 }
 
-button.btn.btn-live {
+.btn-live {
     border: 2.5px solid #101828;
     margin-top: 9px;
     height: 57px;
@@ -65,6 +66,11 @@ button.btn.btn-live {
     font-weight: 500;
     border-radius: 0px;
     font-size: 17px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #101828;
 
     @media(max-width:1679px) {
         font-size: 14px;
@@ -77,12 +83,11 @@ button.btn.btn-live {
         padding: 5px 17px;
     }
 }
-
 .live-detail {
     .main-blog-detail {
         .image-detail {
             position: relative;
-
+            background-color: #d9d9d9;
             &::before {
                 content: "";
                 position: absolute;
@@ -92,23 +97,29 @@ button.btn.btn-live {
                 height: 35%;
                 background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
             }
-
             img {
-                height: 450px;
-                width: 100%;
-                object-fit: cover;
-
-                @media(max-width:1679px) {
-                    height: 400px;
-                }
-
-                @media(max-width:991px) {
-                    height: 350px;
-                }
-
-                @media(max-width:575px) {
-                    height: 295px;
-                }
+                        width: auto;
+                        max-height: 563px;
+                        display: block;
+                        margin: 0 auto;
+                        @media ($sm-1679){
+                            max-height: 500px;
+                        }
+                        @media ($sm-1481){
+                            max-height: 450px;
+                        }
+                        @media ($sm-1199){
+                            max-height: 400px;
+                        }
+                        @media ($sm-991){
+                            max-height: 350px;
+                        }
+                        @media ($sm-767){
+                            max-height: 300px;
+                        }
+                        @media ($sm-579){
+                            max-height: 270px;
+                        }
             }
         }
 
