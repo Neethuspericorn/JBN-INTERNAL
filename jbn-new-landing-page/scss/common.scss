@@ -1,0 +1,67 @@
+@import 'partials';
+.container{
+    &.custom-container{
+        @media (min-width: 1600px) {
+         max-width: 1400px;
+        }
+    }
+}
+
+body {
+    font-family: $font_txt;
+    color: $desc-txt;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.main-title {
+    font-family: $font_title;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    color: $titleColor;
+}
+.sub-title {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: $font-title;
+    color: $desc-txt;
+}
+.column-title{
+    font-size: 12px;
+    line-height: 1;
+    color: $desc-txt;
+    letter-spacing: 1.2px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: $columnTitleColor;
+}
+.para-txt {
+    font-size: 16px;
+    line-height: 27px;
+    color: $desc-txt;
+}
+.view-btn{
+    font-size: 12px;
+    padding: 8px 20px;
+    height: 33px;
+    line-height: 1;
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.blue-bg{
+        background-color: $secondary;
+        color: $white;
+        border: 1px solid #8EC5FF;
+    }
+    &.outlined{
+        background-color: transparent;
+        color: $titleColor;
+        border: 1px solid $primary;
+        height: 37px;
+    }
+}           
+

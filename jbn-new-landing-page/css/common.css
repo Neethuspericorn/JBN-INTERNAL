@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+@media (min-width: 1600px) {
+  .container.custom-container {
+    max-width: 1400px;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #364153;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.main-title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #1A1A1A;
+}
+
+.sub-title {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #364153;
+}
+
+.column-title {
+  font-size: 12px;
+  line-height: 1;
+  color: #364153;
+  letter-spacing: 1.2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: #6A7282;
+}
+
+.para-txt {
+  font-size: 16px;
+  line-height: 27px;
+  color: #364153;
+}
+
+.view-btn {
+  font-size: 12px;
+  padding: 8px 20px;
+  height: 33px;
+  line-height: 1;
+  width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view-btn.blue-bg {
+  background-color: #2891FC;
+  color: #ffffff;
+  border: 1px solid #8EC5FF;
+}
+.view-btn.outlined {
+  background-color: transparent;
+  color: #1A1A1A;
+  border: 1px solid #101828;
+  height: 37px;
+}/*# sourceMappingURL=common.css.map */

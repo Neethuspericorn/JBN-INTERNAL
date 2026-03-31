@@ -1,0 +1,48 @@
+@import 'partials';
+.modal {
+  &.video-modal{
+    .modal-dialog {
+      @media (min-width: 992px) {
+        max-width: 800px;
+      }
+    }
+
+    .modal-header {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background-color: #603ac8;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 20px 44px;
+      @media ($sm-579) {
+        padding: 10px 20px;
+      }
+    }
+    .btn-close{
+      position: absolute;
+      right:20px;
+      top: 20px;
+      background-image: url(../img/close.svg);
+      box-shadow: none;
+      outline: none;
+    }
+    .modal-content{
+      background-color: #000;
+            border-radius: 15px;
+      .video-embed-container{
+        height: 510px;
+        @media ($sm-991){
+                    height: 350px;
+                }
+                @media ($sm-479){
+                    height: 300px;
+                }
+        iframe{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
