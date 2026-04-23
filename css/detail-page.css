@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*** all Mobile Screen (iphone 6,7,8) ***/
 /*** mobile Landscape Size ***/
 /*** medium devices (tablets, less than 992px) ***/
@@ -15,11 +15,8 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
-.contributor-lisitng .feature-title {
+.feature-title {
   padding-bottom: 40px;
-}
-.contributor-lisitng .value {
-  font-size: 12px;
 }
 
 .follow-us-new {
@@ -27,6 +24,14 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 34px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.fetaured-news-detail {
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  padding: 40px 0px;
+}/*# sourceMappingURL=detail-page.css.map */  line-height: 34px;
   letter-spacing: 0px;
   color: #000000;
 }

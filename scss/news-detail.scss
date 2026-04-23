@@ -57,24 +57,31 @@
     }
     .image-detail
     {
-        img
-        {
-            width: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-top: 14px;
-            @media(max-width:1679px)
+        height: 467px;
+        background-color: #d9d9d9;
+        border-radius: 8px;
+         @media(max-width:1679px)
             {
-//                 max-height:500px;
+                height:400px;
             }
-            @media(max-width:991px)
+            @media(max-width:1199px)
             {
-//                 max-height:400px;
+                height:380px;
             }
             @media(max-width:579px)
             {
-//                 max-height: 350px;
+                max-height: 300px;
             }
+        img
+        {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 0 auto;
+            display: block;
+            // margin-top: 14px;
+           
         }
     }
     .posted-by-detail

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*** all Mobile Screen (iphone 6,7,8) ***/
 /*** mobile Landscape Size ***/
 /*** medium devices (tablets, less than 992px) ***/
@@ -127,6 +127,29 @@ img {
 .news-grid .two-col .grid-box {
   flex: 0 0 auto;
 }
+.news-grid .two-col .grid-box img {
+  height: 532px;
+}
+@media (max-width: 1481px) {
+  .news-grid .two-col .grid-box img {
+    height: 490px;
+  }
+}
+@media (max-width: 1281px) {
+  .news-grid .two-col .grid-box img {
+    height: 390px;
+  }
+}
+@media (max-width: 991px) {
+  .news-grid .two-col .grid-box img {
+    height: 300px;
+  }
+}
+@media (max-width: 579px) {
+  .news-grid .two-col .grid-box img {
+    height: 290px;
+  }
+}
 @media (max-width: 991px) {
   .news-grid .two-col .grid-box {
     margin-bottom: 20px;
@@ -187,6 +210,24 @@ img {
 @media (max-width: 579px) {
   .news-grid .four-col .grid-box {
     flex: 0 0 100%;
+  }
+}
+.news-grid .four-col .grid-box img {
+  height: 278px;
+}
+@media (max-width: 1441px) {
+  .news-grid .four-col .grid-box img {
+    height: 172px;
+  }
+}
+@media (max-width: 991px) {
+  .news-grid .four-col .grid-box img {
+    height: 300px;
+  }
+}
+@media (max-width: 579px) {
+  .news-grid .four-col .grid-box img {
+    height: 290px;
   }
 }
 .news-grid .grid-box {
@@ -344,6 +385,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.adspace .ad-bnr img {
+  max-height: 60px;
 }
 
 .featured-news {
@@ -561,6 +605,17 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 172px;
+}
+@media (max-width: 1481px) {
+  .featured-news .featured-news-only .feature-col .thumb-wrp img {
+    height: 160px;
+  }
+}
+@media (max-width: 1441px) {
+  .featured-news .featured-news-only .feature-col .thumb-wrp img {
+    height: 110px;
+  }
 }
 .featured-news .featured-news-only .feature-col .date-stamp {
   font: normal normal normal 11px/15px "Poppins", sans-serif;
@@ -685,6 +740,19 @@ img {
 .video-listing .list-items .img-thumbnail1 {
   position: relative;
 }
+.video-listing .list-items .img-thumbnail1:not(.play-btn) img {
+  height: 266px;
+}
+@media (max-width: 1281px) {
+  .video-listing .list-items .img-thumbnail1:not(.play-btn) img {
+    height: 240px;
+  }
+}
+@media (max-width: 579px) {
+  .video-listing .list-items .img-thumbnail1:not(.play-btn) img {
+    height: 190px;
+  }
+}
 .video-listing .list-items .img-thumbnail1 .play-btn {
   position: absolute;
   top: 50%;
@@ -705,6 +773,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.video-listing .list-items .img-thumbnail1 .play-btn img {
+  height: auto;
 }
 .video-listing .list-items .video-box {
   width: calc(33.3333333333% - 20px);

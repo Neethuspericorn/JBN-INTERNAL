@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*** all Mobile Screen (iphone 6,7,8) ***/
 /*** mobile Landscape Size ***/
 /*** medium devices (tablets, less than 992px) ***/
@@ -46,7 +46,6 @@
 .reach-sec {
   width: 100%;
   padding-bottom: 70px;
-  padding-top: 50px;
 }
 @media (max-width: 1679px) {
   .reach-sec {
@@ -56,13 +55,11 @@
 @media (max-width: 1481px) {
   .reach-sec {
     padding-bottom: 50px;
-    padding-top: 40px;
   }
 }
 @media (max-width: 1199px) {
   .reach-sec {
     padding-bottom: 40px;
-    padding-top: 30px;
   }
 }
 @media (max-width: 991px) {
@@ -279,6 +276,16 @@
     margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 160px;
+  }
+}
+@media (max-width: 479px) {
+  .reach-sec .reach-bnr .btn-link {
+    font-size: 13px;
+    height: 36px;
+    margin: 10px auto 0px;
+  }
+}/*# sourceMappingURL=common.css.map */x;
     width: 160px;
   }
 }

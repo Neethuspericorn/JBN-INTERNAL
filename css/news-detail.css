@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*** all Mobile Screen (iphone 6,7,8) ***/
 /*** mobile Landscape Size ***/
 /*** medium devices (tablets, less than 992px) ***/
@@ -67,28 +67,34 @@
     font-size: 22px;
   }
 }
-.main-blog-detail .image-detail img {
-  width: 100%;
-  max-height: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.main-blog-detail .image-detail {
+  height: 467px;
+  background-color: #d9d9d9;
   border-radius: 8px;
-  margin-top: 14px;
 }
 @media (max-width: 1679px) {
-  .main-blog-detail .image-detail img {
-    max-height: 500px;
+  .main-blog-detail .image-detail {
+    height: 400px;
   }
 }
-@media (max-width: 991px) {
-  .main-blog-detail .image-detail img {
-    max-height: 400px;
+@media (max-width: 1199px) {
+  .main-blog-detail .image-detail {
+    height: 380px;
   }
 }
 @media (max-width: 579px) {
-  .main-blog-detail .image-detail img {
-    max-height: 350px;
+  .main-blog-detail .image-detail {
+    max-height: 300px;
   }
+}
+.main-blog-detail .image-detail img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
 }
 .main-blog-detail .posted-by-detail {
   display: flex;
@@ -154,6 +160,7 @@
   width: calc(100% - 354px);
   padding-right: 42px;
   font-size: 16px;
+  padding-right: 38px;
   line-height: 32px;
 }
 @media (max-width: 1679px) {
@@ -178,8 +185,6 @@
 .main-blog-detail .post-detail-section .post-content p {
   font-size: 16px;
   line-height: 32px;
-  padding-right: 38px;
-  line-height: 34px;
 }
 @media (max-width: 1679px) {
   .main-blog-detail .post-detail-section .post-content p {
@@ -194,6 +199,11 @@
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+}
+@media (max-width: 991px) {
+  .main-blog-detail .post-detail-section .ad-placeholder {
+    width: 100%;
+  }
 }
 .main-blog-detail .post-detail-section .ad-placeholder .ad-bnr {
   margin-top: 30px;
