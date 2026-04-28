@@ -479,6 +479,7 @@ img {
 }
 .featured-news .featured-outer-row .featured-left {
   max-width: calc(100% - 445px);
+  flex: 1;
 }
 @media (max-width: 1679px) {
   .featured-news .featured-outer-row .featured-left {

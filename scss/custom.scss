@@ -378,6 +378,7 @@ img{
         }
         .featured-left{
             max-width: calc(100% - 445px);
+            flex: 1;
             @media ($sm-1679){
                 max-width: calc(100% - 410px);
             }
