@@ -46,6 +46,10 @@
   font-weight: 500;
   font-size: 13px;
 }
+.main-blog-detail .exclusive a {
+  color: #EC1C24;
+  text-decoration: none;
+}
 .main-blog-detail .news-title {
   margin-top: 27px;
   margin-bottom: 27px;
